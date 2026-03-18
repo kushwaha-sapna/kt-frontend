@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+*{
+  font-family: Outfit;
+}
+
+Make Swiper arrows smaller
+.swiper-button-next,
+.swiper-button-prev {
+  color: grey !important;   /* Makes arrow color transparent */
+  width: 30px !important;          /* Reduce size */
+  height: 30px !important;
+}
+
+Custom Swiper Arrows
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 35px;
+  height: 35px;
+} 
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: grey !important;
+}
+
+/* Optional: Change hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: darkgrey !important;
+}
+
