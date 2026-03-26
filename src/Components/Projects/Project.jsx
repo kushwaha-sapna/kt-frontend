@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -28,33 +29,43 @@ const projects = [
 
 const Project = () => {
   return (
-    <section className="py-10">
-      <h2 className="text-center text-3xl font-bold mb-8">
+    <section className="py-10 px-4">
+      <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
         Our Projects
       </h2>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 2000 }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true}
-          slidesPerView={2}   // 👉 2 images in one row
           spaceBetween={15}
+
+          // ✅ Responsive Breakpoints
+          breakpoints={{
+            0: {
+              slidesPerView: 1, // mobile
+            },
+            640: {
+              slidesPerView: 2, // tablet
+            },
+            1024: {
+              slidesPerView: 3, // desktop
+            },
+          }}
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
-              
               <div className="text-center">
                 <img
                   src={project.image}
-                  alt=""
-                  className="w-full h-[150px] object-cover rounded-lg"
+                  alt={project.desc}
+                  className="w-full h-[140px] md:h-[160px] object-cover rounded-lg"
                 />
                 <p className="text-sm mt-2 text-gray-700">
                   {project.desc}
                 </p>
               </div>
-
             </SwiperSlide>
           ))}
         </Swiper>
@@ -64,3 +75,17 @@ const Project = () => {
 };
 
 export default Project;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

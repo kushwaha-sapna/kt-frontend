@@ -1,439 +1,131 @@
-// // // // // // // import React from "react";
-// // // // // // // import logo from "../../assets/logo.jpeg";
 
-// // // // // // // const Navbar = () => {
-// // // // // // //   return (
-// // // // // // //     <nav className="w-full bg-[#fdfafa] text-[#060218] fixed top-0 left-0 z-10 shadow-sm">
-// // // // // // //       <div className="container mx-auto flex items-center justify-between px-4 py-2">
-        
-// // // // // // //         {/* Logo */}
-// // // // // // //         <img src={logo} alt="logo" className="w-18 md:w-22 ml-25" />
 
-// // // // // // //         {/* Menu */}
-// // // // // // //         <ul className="hidden md:flex items-center gap-8 text-[16px]">
-// // // // // // //           <li className="cursor-pointer hover:text-[#d4af37]">Home</li>
-// // // // // // //           <li className="cursor-pointer hover:text-[#d4af37]">Service</li>
-// // // // // // //           <li className="cursor-pointer hover:text-[#d4af37]">Company</li>
-// // // // // // //           <li className="cursor-pointer hover:text-[#d4af37]">Career</li>
-// // // // // // //           <li>
-// // // // // // //             <button className="bg-[#d4af37] text-[#212121] px-6 py-3 rounded-full cursor-pointer hover:opacity-90 transition">
-// // // // // // //               Free Guide
-// // // // // // //             </button>
-// // // // // // //           </li>
-// // // // // // //         </ul>
-
-// // // // // // //         {/* Mobile Button (Optional for now) */}
-// // // // // // //         <div className="md:hidden">
-// // // // // // //           <button className="text-2xl">☰</button>
-// // // // // // //         </div>
-
-// // // // // // //       </div>
-// // // // // // //     </nav>
-// // // // // // //   );
-// // // // // // // };
-
-// // // // // // // export default Navbar;
-
-// // // // // // import React from "react";
-// // // // // // import logo from "../../assets/logo.jpeg";
-
-// // // // // // const Navbar = () => {
-// // // // // //   return (
-// // // // // //     <nav className="w-full bg-white text-gray-900 fixed top-0 left-0 z-10 shadow-sm">
-// // // // // //       <div className="container mx-auto flex items-center justify-between px-6 py-3">
-
-// // // // // //         {/* Logo */}
-// // // // // //         <img 
-// // // // // //           src={logo} 
-// // // // // //           alt="logo" 
-// // // // // //           className="w-22 md:w-25"
-// // // // // //         />
-
-// // // // // //         {/* Menu */}
-// // // // // //         <ul className="hidden md:flex items-center gap-8 text-[16px] font-medium">
-
-// // // // // //           <li className="cursor-pointer hover:text-blue-600 transition">
-// // // // // //             Home
-// // // // // //           </li>
-
-// // // // // //           <li className="cursor-pointer hover:text-blue-600 transition">
-// // // // // //             Service
-// // // // // //           </li>
-
-// // // // // //           <li className="cursor-pointer hover:text-blue-600 transition">
-// // // // // //             Company
-// // // // // //           </li>
-
-// // // // // //           <li className="cursor-pointer hover:text-blue-600 transition">
-// // // // // //             Career
-// // // // // //           </li>
-
-// // // // // //           <li>
-// // // // // //             <button className="bg-blue-600 text-white px-6 py-2 rounded-full cursor-pointer hover:bg-blue-700 transition">
-// // // // // //               Free Guide
-// // // // // //             </button>
-// // // // // //           </li>
-
-// // // // // //         </ul>
-
-// // // // // //         {/* Mobile Button */}
-// // // // // //         <div className="md:hidden text-2xl cursor-pointer">
-// // // // // //           ☰
-// // // // // //         </div>
-
-// // // // // //       </div>
-// // // // // //     </nav>
-// // // // // //   );
-// // // // // // };
-
-// // // // // // export default Navbar;
-
-
-
-
-// // import React from "react";
-// // import { Link } from "react-router-dom";  // ✅ ADD THIS
-// // import logo from "../../assets/logo.jpeg";
-
-// // const Navbar = () => {
-// //   return (
-// //     <nav className="w-full bg-white text-gray-900 fixed top-0 left-0 z-10 shadow-sm">
-// //       <div className="container mx-auto flex items-center justify-between px-6 py-3">
-
-// //         {/* Logo */}
-// //         <Link to="/">
-// //           <img 
-// //             src={logo} 
-// //             alt="logo" 
-// //             className="w-22 md:w-25"
-// //           />
-// //         </Link>
-
-// //         {/* Menu */}
-// //         <ul className="hidden md:flex items-center gap-8 text-[16px] font-medium">
-
-// //           <li>
-// //             <Link to="/" className="hover:text-blue-600 transition">
-// //               Home
-// //             </Link>
-// //           </li>
-
-// //           <li>
-// //             <Link to="/website-development" className="hover:text-blue-600 transition">
-// //               Service
-// //             </Link>
-// //           </li>
-
-// //           <li>
-// //             <Link to="/about" className="hover:text-blue-600 transition">
-// //               Company
-// //             </Link>
-// //           </li>
-
-// //           <li>
-// //             <Link to="/career" className="hover:text-blue-600 transition">
-// //               Career
-// //             </Link>
-// //           </li>
-
-// //           <li>
-// //             <Link to="/contact-us">
-// //               <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-// //                 Free Guide
-// //               </button>
-// //             </Link>
-// //           </li>
-
-// //         </ul>
-
-// //         {/* Mobile Button */}
-// //         <div className="md:hidden text-2xl cursor-pointer">
-// //           ☰
-// //         </div>
-
-// //       </div>
-// //     </nav>
-// //   );
-// // };
-
-// // export default Navbar;
-
-
-
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import logo from "../../assets/logo.jpeg";
-
-// const Navbar = () => {
-//   const [openMenu, setOpenMenu] = useState(null);
-//   const [openSubMenu, setOpenSubMenu] = useState(null);
-
-//   return (
-//     <nav className="w-full bg-white fixed top-0 left-0 z-50 shadow-md">
-//       <div className="container mx-auto flex items-center justify-between px-6 py-3">
-
-//         {/* Logo */}
-//         <Link to="/">
-//           <img src={logo} alt="logo" className="w-24" />
-//         </Link>
-
-//         {/* Menu */}
-//         <ul className="hidden md:flex items-center gap-8 font-medium">
-
-//           <li>
-//             <Link to="/" className="hover:text-blue-600">
-//               Home
-//             </Link>
-//           </li>
-
-//           {/* SERVICES DROPDOWN */}
-//           <li
-//             className="relative"
-//             onMouseEnter={() => setOpenMenu("services")}
-//             onMouseLeave={() => {
-//               setOpenMenu(null);
-//               setOpenSubMenu(null);
-//             }}
-//           >
-//             <span className="cursor-pointer hover:text-blue-600">
-//               Services ▾
-//             </span>
-
-//             {/* MAIN DROPDOWN */}
-//             {openMenu === "services" && (
-//               <div className="absolute top-10 left-0 bg-white shadow-xl rounded-xl p-6 w-[260px]">
-
-//                 {/* DEVELOPMENT */}
-//                 <div
-//                   onMouseEnter={() => setOpenSubMenu("development")}
-//                   className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
-//                 >
-//                   Development ▶
-
-//                   {/* SUB MENU */}
-//                   {openSubMenu === "development" && (
-//                     <div className="absolute top-0 left-[100%] ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-//                       <Link to="/website-development" className="block p-2 hover:bg-gray-100 rounded">
-//                         Website Development
-//                       </Link>
-//                       <Link to="/game-application" className="block p-2 hover:bg-gray-100 rounded">
-//                         Game Development
-//                       </Link>
-//                       <Link to="/mobile-application" className="block p-2 hover:bg-gray-100 rounded">
-//                         Mobile Application Development
-//                       </Link>
-//                     </div>
-//                   )}
-//                 </div>
-
-
-//                   <div
-//                   onMouseEnter={() => setOpenSubMenu("advertisement & e-Commerce")}
-//                   className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
-//                 >
-//                    Advertisement & E-Commerce 
-
-//                   {/* SUB MENU */}
-//                   {openSubMenu === " advertisement & e-Commerce" && (
-//                     <div className="absolute top-0 left-[100%] ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-//                       <Link to="/e-commerce" className="block p-2 hover:bg-gray-100 rounded">
-//                         E-commerce
-//                       </Link>
-
-//                     </div>
-//                   )}
-//                 </div>
-
-//                 {/* OTHER OPTIONS */}
-//                 {/* <Link to="/advertisement" className="block p-2 hover:bg-gray-100 rounded">
-//                   Advertisement & E-Commerce
-//                 </Link> */}
-
-//                 <Link to="/design" className="block p-2 hover:bg-gray-100 rounded">
-//                   Ideas & Design
-//                 </Link>
-
-//                 <Link to="/security" className="block p-2 hover:bg-gray-100 rounded">
-//                   Security
-//                 </Link>
-
-//                 <Link to="/it-services" className="block p-2 hover:bg-gray-100 rounded">
-//                   IT Services
-//                 </Link>
-
-//               </div>
-//             )}
-//           </li>
-
-//           <li>
-//             <Link to="/about" className="hover:text-blue-600">
-//               Company
-//             </Link>
-//           </li>
-
-//           <li>
-//             <Link to="/career" className="hover:text-blue-600">
-//               Career
-//             </Link>
-//           </li>
-
-//           <li>
-//             <Link to="/contact-us">
-//               <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">
-//                 Free Guide
-//               </button>
-//             </Link>
-//           </li>
-
-//         </ul>
-
-//         {/* Mobile */}
-//         <div className="md:hidden text-2xl">☰</div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navRef = useRef(null); // ✅ reference to the navbar
+
+  const toggleMenu = () => setMobileOpen(!mobileOpen);
+
+  const handleMenuClick = (menu) => {
+    setOpenMenu(openMenu === menu ? null : menu);
+    setOpenSubMenu(null);
+  };
+
+  const handleSubMenuClick = (menu) => {
+    setOpenSubMenu(openSubMenu === menu ? null : menu);
+  };
+
+  const closeAllMenus = () => {
+    setOpenMenu(null);
+    setOpenSubMenu(null);
+    setMobileOpen(false);
+  };
+
+  // ✅ Close menus when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        closeAllMenus();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <nav className="w-full bg-white fixed top-0 left-0 z-50 shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-6 py-3">
+    <nav ref={navRef} className="w-full bg-white fixed top-0 left-0 z-50 shadow-sm">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 md:px-8 py-1">
 
-        {/* Logo */}
-        <Link to="/">
-          <img src={logo} alt="logo" className="w-24" />
+        {/* LOGO */}
+        <Link to="/" onClick={closeAllMenus}>
+          <img src={logo} alt="logo" className="w-24 object-contain" />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-8 font-medium">
+        {/* DESKTOP */}
+        <ul className="hidden md:flex items-center gap-8 font-medium text-gray-700">
 
           <li>
-            <Link to="/" className="hover:text-blue-600">Home</Link>
+            <Link to="/" onClick={closeAllMenus}>Home</Link>
           </li>
 
           {/* SERVICES */}
-          <li
-            className="relative"
-            onMouseEnter={() => setOpenMenu("services")}
-            onMouseLeave={() => {
-              setOpenMenu(null);
-              setOpenSubMenu(null);
-            }}
-          >
-            <span className="cursor-pointer hover:text-blue-600">
-              Services 
-            </span>
-
+          <li className="relative" onClick={() => handleMenuClick("services")}>
+            <span className="cursor-pointer hover:text-blue-600">Services ▾</span>
             {openMenu === "services" && (
-              <div className="absolute top-10 left-0 bg-white shadow-xl rounded-xl p-6 w-[260px]">
+              <div className="absolute left-0 top-full mt-3 bg-white shadow-xl rounded-xl w-64 border">
 
-                {/* DEVELOPMENT */}
                 <div
-                  onMouseEnter={() => setOpenSubMenu("development")}
-                  className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
+                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("development"); }}
                 >
-                  Development 
-
+                  Development
                   {openSubMenu === "development" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-                      <Link to="/website-development" className="block p-2 hover:bg-gray-100 rounded">
-                        Website Development
-                      </Link>
-                      <Link to="/game-application" className="block p-2 hover:bg-gray-100 rounded">
-                        Game Development
-                      </Link>
-                      <Link to="/mobile-application" className="block p-2 hover:bg-gray-100 rounded">
-                        Mobile Application Development
-                      </Link>
+                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
+                      <Link to="/website-development" onClick={closeAllMenus} className="block px-4 py-2">Website Development</Link>
+                      <Link to="/game-application" onClick={closeAllMenus} className="block px-4 py-2">Game Development</Link>
+                      <Link to="/mobile-application" onClick={closeAllMenus} className="block px-4 py-2">Mobile App</Link>
                     </div>
                   )}
                 </div>
 
-                {/* ADVERTISEMENT */}
                 <div
-                  onMouseEnter={() => setOpenSubMenu("advertisement")}
-                  className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
+                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("it"); }}
                 >
-                  Advertisement & E-Commerce 
-
-                  {openSubMenu === "advertisement" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-                      <Link to="/e-commerce" className="block p-2 hover:bg-gray-100 rounded">
-                        E-commerce
-                      </Link>
+                  IT Services
+                  {openSubMenu === "it" && (
+                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
+                      <Link to="/permanent-staffing" onClick={closeAllMenus} className="block px-4 py-2">Permanent</Link>
+                      <Link to="/temporary-staffing" onClick={closeAllMenus} className="block px-4 py-2">Temporary</Link>
                     </div>
                   )}
                 </div>
 
-                {/* DESIGN */}
-                <div
-                  onMouseEnter={() => setOpenSubMenu("design")}
-                  className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
-                >
-                  Ideas & Design 
+                <Link to="/design" onClick={closeAllMenus} className="block px-4 py-2">Ideas & Design</Link>
+                <Link to="/security" onClick={closeAllMenus} className="block px-4 py-2">Security</Link>
+              </div>
+            )}
+          </li>
 
-                  {openSubMenu === "design" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-                      <Link to="/ui-ux-design" className="block p-2 hover:bg-gray-100 rounded">
-                        UI/UX Design
-                      </Link>
+          {/* COMPANY */}
+          <li className="relative" onClick={() => handleMenuClick("company")}>
+            <span className="cursor-pointer hover:text-blue-600">Company ▾</span>
+            {openMenu === "company" && (
+              <div className="absolute left-0 top-full mt-3 bg-white shadow-xl rounded-xl w-64 border">
+
+                <div
+                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("about"); }}
+                >
+                  About Company
+                  {openSubMenu === "about" && (
+                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
+                      <Link to="/about-us" onClick={closeAllMenus} className="block px-4 py-2">About Us</Link>
+                      <Link to="/support" onClick={closeAllMenus} className="block px-4 py-2">Support</Link>
+                      <Link to="/contact-us" onClick={closeAllMenus} className="block px-4 py-2">Contact</Link>
                     </div>
                   )}
                 </div>
 
-                {/* SECURITY */}
                 <div
-                  onMouseEnter={() => setOpenSubMenu("security")}
-                  className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
+                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("legal"); }}
                 >
-                  Security 
-
-                  {openSubMenu === "security" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-                      <Link to="/cyber-security" className="block p-2 hover:bg-gray-100 rounded">
-                        Cyber Security
-                      </Link>
-                      <Link to="/database" className="block p-2 hover:bg-gray-100 rounded">
-                        Database
-                      </Link>
-                    </div>
-                  )}
-                </div>
-
-                {/* IT SERVICES */}
-                <div
-                  onMouseEnter={() => setOpenSubMenu("it-services")}
-                  className="relative p-2 hover:bg-gray-100 rounded-md cursor-pointer"
-                >
-                  IT Services 
-
-                  {openSubMenu === "it-services" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-xl rounded-xl p-4 w-[220px]">
-                      <Link to="/temporary-staffing" className="block p-2 hover:bg-gray-100 rounded">
-                        IT Staffing (Temporary)
-                      </Link>
-                      <Link to="/permanent-staffing" className="block p-2 hover:bg-gray-100 rounded">
-                        IT Staffing (Permanent)
-                      </Link>
+                  Legal & Policies
+                  {openSubMenu === "legal" && (
+                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
+                      <Link to="/privacy-policy" onClick={closeAllMenus} className="block px-4 py-2">Privacy Policy</Link>
+                      <Link to="/terms-and-condition" onClick={closeAllMenus} className="block px-4 py-2">Terms and Conditions</Link>
                     </div>
                   )}
                 </div>
@@ -443,16 +135,12 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/about" className="hover:text-blue-600">Company</Link>
+            <Link to="/career" onClick={closeAllMenus}>Career</Link>
           </li>
 
           <li>
-            <Link to="/career" className="hover:text-blue-600">Career</Link>
-          </li>
-
-          <li>
-            <Link to="/contact-us">
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">
+            <Link to="/guidance" onClick={closeAllMenus}>
+              <button className="bg-yellow-400 px-6 py-2 rounded-xl font-semibold">
                 Free Guide
               </button>
             </Link>
@@ -460,8 +148,40 @@ const Navbar = () => {
 
         </ul>
 
-        <div className="md:hidden text-2xl">☰</div>
+        {/* MOBILE ICON */}
+        <div className="md:hidden text-2xl cursor-pointer" onClick={toggleMenu}>☰</div>
       </div>
+
+      {/* MOBILE MENU */}
+      {mobileOpen && (
+        <div className="md:hidden bg-white px-5 py-4 space-y-4 shadow-md">
+          <Link to="/" onClick={closeAllMenus}>Home</Link>
+
+          <div onClick={() => handleMenuClick("services")}>Services</div>
+          {openMenu === "services" && (
+            <div className="ml-4 flex flex-col space-y-2">
+              <Link to="/website-development" onClick={closeAllMenus}>Website</Link>
+              <Link to="/game-application" onClick={closeAllMenus}>Game</Link>
+              <Link to="/mobile-application" onClick={closeAllMenus}>Mobile</Link>
+              <Link to="/permanent-staffing" onClick={closeAllMenus}>Permanent</Link>
+              <Link to="/temporary-staffing" onClick={closeAllMenus}>Temporary</Link>
+              <Link to="/design" onClick={closeAllMenus}>Design</Link>
+              <Link to="/security" onClick={closeAllMenus}>Security</Link>
+            </div>
+          )}
+
+          <div onClick={() => handleMenuClick("company")}>Company</div>
+          {openMenu === "company" && (
+            <div className="ml-4 flex flex-col space-y-2">
+              <Link to="/about-us" onClick={closeAllMenus}>About</Link>
+              <Link to="/support" onClick={closeAllMenus}>Support</Link>
+              <Link to="/contact-us" onClick={closeAllMenus}>Contact</Link>
+            </div>
+          )}
+
+          <Link to="/career" onClick={closeAllMenus}>Career</Link>
+        </div>
+      )}
     </nav>
   );
 };

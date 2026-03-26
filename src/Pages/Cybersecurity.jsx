@@ -7,9 +7,9 @@ const Cybersecurity = () => {
     }, []);
   
   return (
-    <div className="pt-30 px-4 md:px-20 lg:px-32 bg-gray-100  min-h-screen">
-
-
+    
+      <div className="pt-30 px-4 md:px-20 lg:px-32 bg-gray-100 min-h-screen">
+           {/* <div className="bg-gray-50 text-gray-800"> */}
       {/* Heading */}
        <div className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

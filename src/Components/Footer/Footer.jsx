@@ -1,108 +1,88 @@
-// import React from 'react'
-// import { Link } from "react-router-dom";
-// const Footer = () => {
-//   return (
-//     <div>
-//       <div>
-//         <div className='pt-10 px-4 md:px-20 lg:px-32 bg-gray-900 w-full overflow-hidden' id='footer'></div>
-//         <div className='container mx-auto flex flex-col md:flex-row justify-between items-start'></div>
-//         <div className='w-full md:w-1/3 mb-8 md:mb-0'>
-//         <p  className='text-gray-400 mt-4'>
-//             this is the footer of the webpage
-//         </p>
-            
-            
-//              </div>
-//              <div  className='w-full md:w-1/5 mb-8 md;mb-0'>
-
-//                 <h3 className='text-black text-lg font-bold mb-4'>Company</h3>
-                
-//                <ul  className='flex flex-col gap-2 text-gray-400'>
-
-//        <Link to="/" className='hover:text-white'>Home</Link>
-//       <Link to="/about" className='hover:text-white'>About us</Link>
-//        <Link to="/contact" className='hover:text-white'>Contact</Link>
-//          <Link to="/policy" className='hover:text-white'>Privacy policy</Link>
-// </ul>
 
 
-                
-//              </div>
-//              <div className='w-full md:w-1/3'>
-//              <h1  className='text-black text-lg font-bold mb-4'>text h1</h1>
-//              <p  className='text-gray-400 mb-4 max-w-80'> paragraph text h1</p>
 
 
-//              </div>
-//       </div>
-//       <div></div>
-//     </div>
-//   )
-// }
 
-// export default Footer
-
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className='bg-gray-900 w-full overflow-hidden' id='footer'>
-      
-      <div className='pt-10 px-4 md:px-20 lg:px-32'>
-        <div className='container mx-auto flex flex-col md:flex-row justify-between items-start'>
+    <footer className="bg-[#0a1f44] text-white px-6 py-12">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
 
-          {/* Left Section */}
-          <div className='w-full md:w-1/3 mb-8 md:mb-0'>
-            <p className='text-gray-400 mt-4'>
-              This is the footer of the webpage
-            </p>
-          </div>
+        {/* About Section */}
+        <div>
+          <h2 className="text-2xl font-bold text-cyan-400 mb-4">KT-Technology</h2>
+          <p className="text-sm leading-relaxed">
+            Leading technology solutions provider delivering innovative software development and IT consulting services worldwide.
+          </p>
+        </div>
 
-          {/* Middle Section */}
-          <div className='w-full md:w-1/5 mb-8 md:mb-0'>
-            <h3 className='text-white text-lg font-bold mb-4'>Company</h3>
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-xl font-semibold text-cyan-400 mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link to="/" className="hover:text-cyan-300">Home</Link>
+            </li>
+            <li>
+              <Link to="/about-us" className="hover:text-cyan-300">About Us</Link>
+            </li>
+            <li>
+              <Link to="/career" className="hover:text-cyan-300">Careers</Link>
+            </li>
+            <li>
+              <Link to="/contact-us" className="hover:text-cyan-300">Contact</Link>
+            </li>
+            <li>
+              <Link to="/support" className="hover:text-cyan-300">Support</Link>
+            </li>
+            <li>
+              <Link to="/guidance" className="hover:text-cyan-300">Free Guide</Link>
+            </li>
+          </ul>
+        </div>
 
-            <ul className='flex flex-col gap-2 text-gray-400'>
-              <li><Link to="/" className='hover:text-white'>Home</Link></li>
-              <li><Link to="/about" className='hover:text-white'>About us</Link></li>
-              <li><Link to="/contact-us" className='hover:text-white'>Contact</Link></li>
-              <li><Link to="/policy" className='hover:text-white'>Privacy policy</Link></li>
+        {/* Services & Solutions */}
+        <div>
+          <h3 className="text-xl font-semibold text-cyan-400 mb-4">Services & Solutions</h3>
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <ul className="space-y-1">
+              <li><Link to="/website-development" className="hover:text-cyan-300">Website Development</Link></li>
+              <li><Link to="/mobile-application" className="hover:text-cyan-300">Mobile Application</Link></li>
+              <li><Link to="game-application" className="hover:text-cyan-300">Game Development</Link></li>
+              <li><Link to="/ui-ux-design" className="hover:text-cyan-300">UI/UX Design</Link></li>
+               
+              <li><Link to="/cybersecurity" className="hover:text-cyan-300">Cybersecurity</Link></li>
+            
             </ul>
+           
           </div>
+        </div>
 
-          {/* Right Section */}
-          <div className='w-full md:w-1/3'>
-            <h3 className='text-white text-lg font-bold mb-4'>
-              Subscribe to our newsletter
-            </h3>
-
-            <p className='text-gray-400 mb-4 max-w-80'>
-              Paragraph text here
-            </p>
-
-            <div className='flex gap-2'>
-              <input
-                type="email"
-                placeholder='Enter your email'
-                className='px-3 py-2 border border-gray-700 rounded focus:outline-none w-full md:w-auto'
-              />
-              <button className='py-2 px-4 rounded bg-blue-500 text-white hover:bg-blue-600'>
-                Submit
-              </button>
-            </div>
-          </div>
-
+        {/* Contact Section */}
+        <div>
+          <h3 className="text-xl font-semibold text-cyan-400 mb-4">Get In Touch</h3>
+          <p className="text-sm mb-2">
+            xyz,Noida
+          </p>
+          <p className="text-sm mb-2">Phone: +91 xzy</p>
+          <p className="text-sm mb-2">Email: info@kt-technology.com</p>
+          <p className="text-sm">Mon - Sat: 10:00 AM - 19:00 PM</p>
         </div>
       </div>
 
-      {/* Bottom Section */}
-      <div className='text-center text-gray-500 text-sm py-4 border-t border-gray-800 mt-8'>
-        Copyright 2024 © ZT-technology
+      {/* Footer Bottom */}
+      <div className="mt-10 border-t border-gray-400 pt-6 text-center text-sm text-gray-400 space-y-2">
+        <p>© 2026 KT-Technology LLP. All rights reserved. | Crafted by KT-Technology Team</p>
+        <p>
+          <Link to="/privacy-policy" className="hover:text-cyan-300">Privacy Policy</Link> •{" "}
+          <Link to="/terms" className="hover:text-cyan-300">Terms of Service</Link>
+        </p>
       </div>
-
-    </div>
-  )
-}
+    </footer>
+  );
+};
 
 export default Footer;

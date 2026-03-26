@@ -76,7 +76,7 @@ const TrustedClients = () => {
         ))}
       </div>
 
-      {/* Stats Section */}
+      {/* Stats Section
       <div className="mt-12 bg-gradient-to-r from-black to-gray-900 border border-gray-800 rounded-xl p-8 grid md:grid-cols-4 gap-6 text-center">
         
         <div>
@@ -103,7 +103,7 @@ const TrustedClients = () => {
           <p className="text-gray-400 text-sm">Countries Served</p>
         </div>
 
-      </div>
+      </div> */}
     </section>
   );
 };
