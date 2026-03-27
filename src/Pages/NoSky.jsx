@@ -1,0 +1,29 @@
+import React from "react";
+
+const NoSky = () => {
+  return (
+    <div className="pt-24 px-6 md:px-20 pb-16">
+
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold">No Sky</h1>
+        <p className="text-gray-600 mt-3">
+          Custom-built business software solutions.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {["Custom Workflows","Integration","Scalability"].map((t,i)=>(
+          <div key={i} className="bg-white p-6 rounded-xl shadow">
+            <h3 className="text-blue-600 font-semibold">{t}</h3>
+            <p className="text-sm text-gray-500 mt-2">
+              Flexible tools designed for your needs.
+            </p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  );
+};
+
+export default NoSky;

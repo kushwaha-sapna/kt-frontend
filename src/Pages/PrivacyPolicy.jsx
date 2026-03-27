@@ -74,8 +74,10 @@ const PrivacyPolicy = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-24">
-      {/* ✅ HERO SECTION */}
+    <div className="bg-gray-50 min-h-screen pt-10">
+   
+
+      {/*  HERO SECTION */}
       <div className="text-center py-16 px-4 bg-gray-900">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
           Privacy Policy

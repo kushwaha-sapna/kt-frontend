@@ -111,10 +111,10 @@ const Security = () => {
   ];
 
   return (
-    <div className="pt-[120px] px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
       <div className="max-w-6xl mx-auto">
 
-        {/* 🔥 HERO */}
+        {/*  HERO */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Cyber Security
@@ -135,7 +135,7 @@ const Security = () => {
           </p>
         </div>
 
-        {/* 🔥 CARDS */}
+        {/* CARDS */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {services.map((item, index) => (
             <div key={index} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">

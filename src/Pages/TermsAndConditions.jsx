@@ -68,7 +68,7 @@ const TermsAndCondition = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-24">
+    <div className="bg-gray-50 min-h-screen pt-10">
 
       {/* HERO */}
       <div className="text-center py-16 px-4 bg-gradient-to-r from-indigo-600 to-blue-600">

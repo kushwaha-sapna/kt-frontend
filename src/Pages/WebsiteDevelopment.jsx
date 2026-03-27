@@ -10,7 +10,7 @@ const WebsiteDevelopment = () => {
 
   
   return (
-    <div className="pt-30 px-4 md:px-16 lg:px-28 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white min-h-screen">
+    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white min-h-screen">
 
       <div className="max-w-6xl mx-auto">
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaClock, FaUsers } from "react-icons/fa";
-import IndustriesWeServe from "../Components/IndustriesWeServe";
+// import IndustriesWeServe from "../Components/IndustriesWeServe";
 
 const TemporaryStaffing = () => {
 
@@ -10,11 +10,11 @@ const TemporaryStaffing = () => {
   }, []);
 
   return (
-    <div className="pt-[120px] px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
 
       <div className="max-w-6xl mx-auto">
 
-        {/* 🔥 HERO */}
+        {/* HERO */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             IT Staffing Services
@@ -35,7 +35,7 @@ const TemporaryStaffing = () => {
           </p>
         </div>
 
-        {/* 🔥 SERVICES CARDS */}
+        {/*  SERVICES CARDS */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
 
           {/* TEMPORARY */}
@@ -89,7 +89,7 @@ const TemporaryStaffing = () => {
 
         </div>
 
-        {/* 🔥 DETAIL SECTION */}
+        {/*  DETAIL SECTION */}
         <div className="grid md:grid-cols-2 gap-10 mb-20">
 
           {/* TEMP DETAIL */}
@@ -120,12 +120,12 @@ const TemporaryStaffing = () => {
 
         </div>
 
-        {/* 🔥 INDUSTRIES */}
-        <div className="mt-20">
+        {/*  INDUSTRIES */}
+        {/* <div className="mt-20">
           <IndustriesWeServe />
-        </div>
+        </div> */}
 
-        {/* 🔥 CTA */}
+        {/* CTA */}
         <div className="mt-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-center py-12 rounded-2xl shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Build Your IT Team Today

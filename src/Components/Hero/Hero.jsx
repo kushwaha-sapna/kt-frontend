@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import slider1 from "../../assets/slider1.jpg";
 import slider2 from "../../assets/slider2.jpg";
 
@@ -49,21 +49,21 @@ function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
 
              
-             <button className="bg-white text-black px-6 py-3 rounded-lg hover:scale-105 transition duration-300">
-                Get Started →
-              </button>
-              
-              {/* <Link to="/about">
+               <Link to="/contact-us">
                  <button className="bg-[#d4af37] text-black px-6 py-3 rounded-lg hover:scale-105 transition duration-300">
                Get Started →
                   </button>
-                    </Link> */}
+                    </Link> 
+
+                   < Link to="/about-us">
+                 <button className="bg-[#d4af37] text-black px-6 py-3 rounded-lg hover:scale-105 transition duration-300">
+               Learn More
+                  </button>
+                    </Link> 
 
   
 
-              <button className="border border-white px-6 py-3 rounded-lg  text-white hover:bg-white hover:text-black transition duration-300">
-                Learn More
-              </button>
+              
 
             </div>
 

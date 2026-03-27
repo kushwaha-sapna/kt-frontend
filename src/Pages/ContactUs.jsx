@@ -13,7 +13,7 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-28 pb-12 px-4 md:px-16">
+    <div className="bg-gray-50 min-h-screen pt-10 pb-12 px-4 md:px-16">
 
       {/* Heading Section (Fixed Navbar Overlap) */}
       <div className="text-center mb-14">
