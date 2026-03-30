@@ -1,21 +1,84 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-  FaClock
+  FaClock,
+  FaCheckCircle,
+  FaExclamationTriangle
 } from "react-icons/fa";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    company: '',
+    designation: '',
+    source: '',
+    service: '',
+    budget: '',
+    message: ''
+  });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState({ show: false, type: '', text: '' });
+
+  // Backend API uses Vite proxy - no hardcoded URL visible
+const API_BASE ='https://kt-technology-backend.onrender.com/api'
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
-    <div className="bg-gray-50 min-h-screen pt-10 pb-12 px-4 md:px-16">
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
-      {/* Heading Section (Fixed Navbar Overlap) */}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (loading) return;
+
+    setLoading(true);
+    setMessage({ show: false });
+
+    try {
+      const response = await fetch(`${API_BASE}/email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setMessage({ show: true, type: 'success', text: data.message });
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          company: '',
+          designation: '',
+          source: '',
+          service: '',
+          budget: '',
+          message: ''
+        });
+      } else {
+        setMessage({ show: true, type: 'error', text: data.error || 'Submission failed' });
+      }
+    } catch (error) {
+      console.error('Submit error:', error);
+      setMessage({ show: true, type: 'error', text: 'Network error. Please try again.' });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="bg-gray-50 min-h-screen pt-28 pb-12 px-4 md:px-16">
+      {/* Heading Section */}
       <div className="text-center mb-14">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-900 tracking-wide">
           Contact Us
@@ -28,7 +91,6 @@ const ContactUs = () => {
 
       {/* Info Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
-
         {/* Address */}
         <div className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
           <FaMapMarkerAlt className="text-blue-900 text-3xl mx-auto mb-3" />
@@ -79,10 +141,23 @@ const ContactUs = () => {
           Send Us a Message
         </h2>
 
-        <form className="grid md:grid-cols-2 gap-6">
+        {message.show && (
+          <div className={`mb-6 p-4 rounded-lg flex items-center gap-3 ${
+            message.type === 'success' 
+              ? 'bg-green-100 border border-green-300 text-green-800' 
+              : 'bg-red-100 border border-red-300 text-red-800'
+          }`}>
+            {message.type === 'success' ? <FaCheckCircle /> : <FaExclamationTriangle />}
+            <span>{message.text}</span>
+          </div>
+        )}
 
+        <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
           <input
             type="text"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleChange}
             placeholder="Full Name *"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
@@ -90,61 +165,93 @@ const ContactUs = () => {
 
           <input
             type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
             placeholder="Email Address *"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
           <input
-            type="text"
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
             placeholder="Phone Number (+91-8882822733)"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
             type="text"
+            name="company"
+            value={formData.company}
+            onChange={handleChange}
             placeholder="Company Name"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
             type="text"
+            name="designation"
+            value={formData.designation}
+            onChange={handleChange}
             placeholder="Designation"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
             type="text"
+            name="source"
+            value={formData.source}
+            onChange={handleChange}
             placeholder="How did you hear about us?"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
-          <select className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option>Service Required *</option>
-            <option>Web Development</option>
-            <option>App Development</option>
-            <option>Cyber Security</option>
-            <option>Cloud Services</option>
+          <select 
+            name="service"
+            value={formData.service}
+            onChange={handleChange}
+            className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          >
+            <option value="">Service Required *</option>
+            <option value="Web Development">Web Development</option>
+            <option value="App Development">App Development</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="Cloud Services">Cloud Services</option>
           </select>
 
           <input
             type="text"
+            name="budget"
+            value={formData.budget}
+            onChange={handleChange}
             placeholder="Project Budget"
             className="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <textarea
-            placeholder="Your Message *"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
             rows="4"
+            placeholder="Your Message *"
             className="md:col-span-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           ></textarea>
 
           <button
             type="submit"
-            className="md:col-span-2 bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 hover:scale-[1.02] transition duration-300"
+            disabled={loading}
+            className={`md:col-span-2 py-3 rounded-lg text-white font-medium transition duration-300 hover:scale-[1.02] ${
+              loading
+                ? 'bg-gray-400 cursor-not-allowed'
+                : 'bg-blue-900 hover:bg-blue-800'
+            }`}
           >
-            Send Message
+            {loading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
       </div>
