@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -5,10 +6,13 @@
 
 
 
+=======
+>>>>>>> 3b6eaa0 (small update)
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
+import Marquee from "./Components/Marquee/Marquee";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
@@ -22,7 +26,9 @@ import Technologies from "./Components/Technologies/Technologies.jsx";
 import Project from "./Components/Projects/Project.jsx";
 import TrustedClients from "./Components/TrustedClients/TrustedClients.jsx";
 
-// Pages
+import HomePopup from "./Components/HomePopup/HomePopup.jsx";
+import WhatsAppFloating from "./Components/WhatsAppFloating/WhatsAppFloating.jsx";
+
 import WebsiteDevelopment from "./Pages/WebsiteDevelopment";
 import MobileApplication from "./Pages/MobileApplication";
 import GameApplication from "./Pages/GameApplication";
@@ -55,7 +61,6 @@ import GMB from "./Pages/GMB.jsx";
 const App = () => {
   const location = useLocation();
 
-  //Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -63,66 +68,68 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <Marquee />
 
-      <Routes>
-        {/* Home */}
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <About />
-              <Services />
-              <Products />
-              <CoreValues />
-              <IndustriesSection />
-              <ClientTestimonial />
-              <OurProcess />
-              <TrustedClients />
-              <Technologies />
-              <Project />
-            </>
-          }
-        />
+      <div style={{ paddingTop: '2rem' }}> {/* Navbar 5rem + Marquee 4rem */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HomePopup />
+                <Hero />
+                <About />
+                <Services />
+                <Products />
+                <CoreValues />
+                <IndustriesSection />
+                <ClientTestimonial />
+                <OurProcess />
+                <TrustedClients />
+                <Technologies />
+                <Project />
+              </>
+            }
+          />
 
-        {/* Pages */}
-        <Route path="/website-development" element={<div className="pt-24"><WebsiteDevelopment /></div>} />
-        <Route path="/mobile-application" element={<div className="pt-24"><MobileApplication /></div>} />
-        <Route path="/game-application" element={<div className="pt-24"><GameApplication /></div>} />
-        <Route path="/ui-ux-design" element={<div className="pt-24"><UIUXDesign /></div>} />
-        <Route path="/digital-marketing" element={<div className="pt-24"><DigitalMarketing /></div>} />
-        <Route path="/graphic-designing" element={<div className="pt-24"><GraphicDesigning /></div>} />
-        <Route path="/ugc" element={<div className="pt-24"><UGC /></div>} />
-        <Route path="/cybersecurity" element={<div className="pt-24"><Cybersecurity /></div>} />
-        <Route path="/contact-us" element={<div className="pt-24"><ContactUs /></div>} />
-        <Route path="/career" element={<div className="pt-24"><Career /></div>} />
-        <Route path="/about-us" element={<div className="pt-24"><AboutUs /></div>} />
-        <Route path="/temporary-staffing" element={<div className="pt-24"><TemporaryStaffing /></div>} />
-        <Route path="/permanent-staffing" element={<div className="pt-24"><PermanentStaffing /></div>} />
-        <Route path="/design" element={<div className="pt-24"><IdeaAndDesign /></div>} />
-        <Route path="/security" element={<div className="pt-24"><Security /></div>} />
-        <Route path="/privacy-policy" element={<div className="pt-24"><PrivacyPolicy /></div>} />
-        <Route path="/terms-and-condition" element={<div className="pt-24"><TermsAndCondition /></div>} />
-        <Route path="/support" element={<div className="pt-24"><Support /></div>} />
-        <Route path="/guidance" element={<div className="pt-24"><Guidance /></div>} />
+          <Route path="/website-development" element={<div className="pt-28"><WebsiteDevelopment /></div>} />
+          <Route path="/mobile-application" element={<div className="pt-28"><MobileApplication /></div>} />
+          <Route path="/game-application" element={<div className="pt-28"><GameApplication /></div>} />
+          <Route path="/ui-ux-design" element={<div className="pt-28"><UIUXDesign /></div>} />
+          <Route path="/digital-marketing" element={<div className="pt-28"><DigitalMarketing /></div>} />
+          <Route path="/graphic-designing" element={<div className="pt-28"><GraphicDesigning /></div>} />
+          <Route path="/ugc" element={<div className="pt-28"><UGC /></div>} />
+          <Route path="/cybersecurity" element={<div className="pt-28"><Cybersecurity /></div>} />
+          <Route path="/contact-us" element={<div className="pt-28"><ContactUs /></div>} />
+          <Route path="/career" element={<div className="pt-28"><Career /></div>} />
+          <Route path="/about-us" element={<div className="pt-28"><AboutUs /></div>} />
+          <Route path="/temporary-staffing" element={<div className="pt-28"><TemporaryStaffing /></div>} />
+          <Route path="/permanent-staffing" element={<div className="pt-28"><PermanentStaffing /></div>} />
+          <Route path="/design" element={<div className="pt-28"><IdeaAndDesign /></div>} />
+          <Route path="/security" element={<div className="pt-28"><Security /></div>} />
+          <Route path="/privacy-policy" element={<div className="pt-28"><PrivacyPolicy /></div>} />
+          <Route path="/terms-and-condition" element={<div className="pt-28"><TermsAndCondition /></div>} />
+          <Route path="/support" element={<div className="pt-28"><Support /></div>} />
+          <Route path="/guidance" element={<div className="pt-28"><Guidance /></div>} />
 
-        {/* Products */}
-        <Route path="/erp" element={<ERP />} />
-        <Route path="/crm" element={<CRM />} />
-        <Route path="/hrms" element={<HRMS />} />
-        <Route path="/ts-plus" element={<TSPlus />} />
-        <Route path="/no-sky" element={<NoSky />} />
-        <Route path="/tally" element={<Tally />} />
-        <Route path="/booking-portal" element={<BookingPortal />} />
-        <Route path="/gmb" element={<GMB />} />
+          <Route path="/erp" element={<div className="pt-28"><ERP /></div>} />
+          <Route path="/crm" element={<div className="pt-28"><CRM /></div>} />
+          <Route path="/hrms" element={<div className="pt-28"><HRMS /></div>} />
+          <Route path="/ts-plus" element={<div className="pt-28"><TSPlus /></div>} />
+          <Route path="/no-sky" element={<div className="pt-28"><NoSky /></div>} />
+          <Route path="/tally" element={<div className="pt-28"><Tally /></div>} />
+          <Route path="/booking-portal" element={<div className="pt-28"><BookingPortal /></div>} />
+          <Route path="/gmb" element={<div className="pt-28"><GMB /></div>} />
 
-        {/* Fallback */}
-        <Route path="*" element={<div className="pt-24">Page Not Found</div>} />
-      </Routes>
+          <Route path="*" element={<div className="pt-28">Page Not Found</div>} />
+        </Routes>
+      </div>
 
+      <WhatsAppFloating />
       <Footer />
     </div>
   );
 };
 
 export default App;
+
