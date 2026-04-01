@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 const WhatsAppFloating = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const whatsappNumber = '91 884 094 5936'; // Replace with actual number
+  const whatsappNumber = '91 884 094 5936'; 
   const message = 'Hello! I am interested in your services.';
 
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;

@@ -1,10 +1,10 @@
 const Marquee = () => {
-  const text = "hi i am vinay • hi i am vinay • hi i am vinay • hi i am vinay • hi i am vinay • ";
+  const text = "Navratri Offer \u2022 Navratri Offer \u2022 Navratri Offer \u2022 Navratri Offer \u2022 Navratri Offer \u2022 ";
 
   return (
     <div className="marquee-container ">
       <div className="marquee-track">
-        <span className="mt-4">{text}</span>
+        <span>{text}</span>
       </div>
     </div>
   );

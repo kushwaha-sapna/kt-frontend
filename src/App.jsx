@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
->>>>>>> 3b6eaa0 (small update)
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
@@ -60,17 +50,19 @@ import GMB from "./Pages/GMB.jsx";
 
 const App = () => {
   const location = useLocation();
+  const [isHome, setIsHome] = useState(location.pathname === '/');
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setIsHome(location.pathname === '/');
   }, [location]);
 
   return (
     <div>
-      <Navbar />
-      <Marquee />
-
-      <div style={{ paddingTop: '2rem' }}> {/* Navbar 5rem + Marquee 4rem */}
+      {isHome && <Marquee />}
+      <Navbar isHome={isHome} />
+      
+      <div style={{ paddingTop: isHome ? '4rem' : '0' }}>
         <Routes>
           <Route
             path="/"
@@ -92,36 +84,36 @@ const App = () => {
             }
           />
 
-          <Route path="/website-development" element={<div className="pt-28"><WebsiteDevelopment /></div>} />
-          <Route path="/mobile-application" element={<div className="pt-28"><MobileApplication /></div>} />
-          <Route path="/game-application" element={<div className="pt-28"><GameApplication /></div>} />
-          <Route path="/ui-ux-design" element={<div className="pt-28"><UIUXDesign /></div>} />
-          <Route path="/digital-marketing" element={<div className="pt-28"><DigitalMarketing /></div>} />
-          <Route path="/graphic-designing" element={<div className="pt-28"><GraphicDesigning /></div>} />
-          <Route path="/ugc" element={<div className="pt-28"><UGC /></div>} />
-          <Route path="/cybersecurity" element={<div className="pt-28"><Cybersecurity /></div>} />
-          <Route path="/contact-us" element={<div className="pt-28"><ContactUs /></div>} />
-          <Route path="/career" element={<div className="pt-28"><Career /></div>} />
-          <Route path="/about-us" element={<div className="pt-28"><AboutUs /></div>} />
-          <Route path="/temporary-staffing" element={<div className="pt-28"><TemporaryStaffing /></div>} />
-          <Route path="/permanent-staffing" element={<div className="pt-28"><PermanentStaffing /></div>} />
-          <Route path="/design" element={<div className="pt-28"><IdeaAndDesign /></div>} />
-          <Route path="/security" element={<div className="pt-28"><Security /></div>} />
-          <Route path="/privacy-policy" element={<div className="pt-28"><PrivacyPolicy /></div>} />
-          <Route path="/terms-and-condition" element={<div className="pt-28"><TermsAndCondition /></div>} />
-          <Route path="/support" element={<div className="pt-28"><Support /></div>} />
-          <Route path="/guidance" element={<div className="pt-28"><Guidance /></div>} />
+          <Route path="/website-development" element={<div className="pt-20"><WebsiteDevelopment /></div>} />
+          <Route path="/mobile-application" element={<div className="pt-20"><MobileApplication /></div>} />
+          <Route path="/game-application" element={<div className="pt-20"><GameApplication /></div>} />
+          <Route path="/ui-ux-design" element={<div className="pt-20"><UIUXDesign /></div>} />
+          <Route path="/digital-marketing" element={<div className="pt-20"><DigitalMarketing /></div>} />
+          <Route path="/graphic-designing" element={<div className="pt-20"><GraphicDesigning /></div>} />
+          <Route path="/ugc" element={<div className="pt-20"><UGC /></div>} />
+          <Route path="/cybersecurity" element={<div className="pt-20"><Cybersecurity /></div>} />
+          <Route path="/contact-us" element={<div className="pt-20"><ContactUs /></div>} />
+          <Route path="/career" element={<div className="pt-20"><Career /></div>} />
+          <Route path="/about-us" element={<div className="pt-20"><AboutUs /></div>} />
+          <Route path="/temporary-staffing" element={<div className="pt-20"><TemporaryStaffing /></div>} />
+          <Route path="/permanent-staffing" element={<div className="pt-20"><PermanentStaffing /></div>} />
+          <Route path="/design" element={<div className="pt-20"><IdeaAndDesign /></div>} />
+          <Route path="/security" element={<div className="pt-20"><Security /></div>} />
+          <Route path="/privacy-policy" element={<div className="pt-20"><PrivacyPolicy /></div>} />
+          <Route path="/terms-and-condition" element={<div className="pt-20"><TermsAndCondition /></div>} />
+          <Route path="/support" element={<div className="pt-20"><Support /></div>} />
+          <Route path="/guidance" element={<div className="pt-20"><Guidance /></div>} />
 
-          <Route path="/erp" element={<div className="pt-28"><ERP /></div>} />
-          <Route path="/crm" element={<div className="pt-28"><CRM /></div>} />
-          <Route path="/hrms" element={<div className="pt-28"><HRMS /></div>} />
-          <Route path="/ts-plus" element={<div className="pt-28"><TSPlus /></div>} />
-          <Route path="/no-sky" element={<div className="pt-28"><NoSky /></div>} />
-          <Route path="/tally" element={<div className="pt-28"><Tally /></div>} />
-          <Route path="/booking-portal" element={<div className="pt-28"><BookingPortal /></div>} />
-          <Route path="/gmb" element={<div className="pt-28"><GMB /></div>} />
+          <Route path="/erp" element={<div className="pt-20"><ERP /></div>} />
+          <Route path="/crm" element={<div className="pt-20"><CRM /></div>} />
+          <Route path="/hrms" element={<div className="pt-20"><HRMS /></div>} />
+          <Route path="/ts-plus" element={<div className="pt-20"><TSPlus /></div>} />
+          <Route path="/no-sky" element={<div className="pt-20"><NoSky /></div>} />
+          <Route path="/tally" element={<div className="pt-20"><Tally /></div>} />
+          <Route path="/booking-portal" element={<div className="pt-20"><BookingPortal /></div>} />
+          <Route path="/gmb" element={<div className="pt-20"><GMB /></div>} />
 
-          <Route path="*" element={<div className="pt-28">Page Not Found</div>} />
+          <Route path="*" element={<div className="pt-20">Page Not Found</div>} />
         </Routes>
       </div>
 

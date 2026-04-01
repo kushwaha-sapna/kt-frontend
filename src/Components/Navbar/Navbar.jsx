@@ -1,12 +1,10 @@
-
-
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 import { FaChevronDown } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ isHome }) => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -43,8 +41,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={navRef} className="w-full bg-white fixed top-0 left-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 md:px-8 py-1">
+    <nav ref={navRef} className={`w-full bg-white fixed left-0 z-50 shadow-sm ${isHome ? 'top-8' : 'top-0'}`}>
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-1">
         
         {/* LOGO */}
         <Link to="/" onClick={closeAllMenus}>
@@ -158,13 +156,12 @@ const Navbar = () => {
           </li>
         </ul>
 
-       
         <div
-  className="md:hidden text-2xl cursor-pointer p-2"
-  onClick={toggleMenu}
->
-  <FaBars />
-</div>
+          className="md:hidden text-2xl cursor-pointer p-2"
+          onClick={toggleMenu}
+        >
+          <FaBars />
+        </div>
       </div>
 
       {/* MOBILE OVERLAY */}
@@ -175,7 +172,8 @@ const Navbar = () => {
       {/* MOBILE DRAWER */}
       <div className={`fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 md:hidden ${
         mobileOpen ? "translate-x-0" : "-translate-x-full"
-      }`}>        <div className="p-5 space-y-4 mt-6">
+      }`}>
+        <div className="p-5 space-y-4 mt-6">
           <Link to="/" onClick={closeAllMenus} className="block border-b pb-2">Home</Link>
 
           {/* SERVICES MOBILE */}
@@ -227,7 +225,6 @@ const Navbar = () => {
               </div>
               {openSubMenu === "aboutCompany" && (
                 <div className="ml-3 flex flex-col space-y-1">
-                 
                   <Link to="/support" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">Support</Link>
                   <Link to="/contact-us" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">Contact</Link>
                 </div>
@@ -255,3 +252,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
