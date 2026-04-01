@@ -13,6 +13,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: './',
+  base: "/kt-frontend/",
   plugins: [react(), tailwindcss()],
 })
