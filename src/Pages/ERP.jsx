@@ -7,7 +7,7 @@ import {
   FaCloud,
   FaUsers,
   FaShieldAlt,
-  FaCheckCircle, // ✅ Tick icon
+  FaCheckCircle, // Tick icon
 } from "react-icons/fa";
 
 const ERP = () => {
@@ -135,13 +135,7 @@ const ERP = () => {
 
       </div>
 
-      {/* CTA */}
-      {/* <div className="text-center">
-        <button className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition">
-          Request Demo
-        </button>
-      </div> */}
-
+     
     </div>
   );
 };

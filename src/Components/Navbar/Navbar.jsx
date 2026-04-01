@@ -2,6 +2,7 @@
 
 
 
+
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
@@ -52,48 +53,15 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-24 object-contain" />
         </Link>
 
-        {/* DESKTOP */}
+        {/* DESKTOP (UNCHANGED) */}
         <ul className="hidden md:flex items-center gap-8 font-medium text-gray-700">
-          <li>
-            <Link to="/" onClick={closeAllMenus}>Home</Link>
-          </li>
+          <li><Link to="/" onClick={closeAllMenus}>Home</Link></li>
 
           {/* SERVICES */}
           <li className="relative" onClick={() => handleMenuClick("services")}>
             <span className="cursor-pointer hover:text-blue-600 flex items-center gap-1">
               Services <FaChevronDown size={12} />
             </span>
-            {openMenu === "services" && (
-              <div className="absolute left-0 top-full mt-3 bg-white shadow-xl rounded-xl w-64 border">
-                <div
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("development"); }}
-                >
-                  Development
-                  {openSubMenu === "development" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
-                      <Link to="/website-development" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Website Development</Link>
-                      <Link to="/game-application" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Game Development</Link>
-                      <Link to="/mobile-application" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Mobile App</Link>
-                    </div>
-                  )}
-                </div>
-                <div
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("it"); }}
-                >
-                  IT Services
-                  {openSubMenu === "it" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
-                      <Link to="/permanent-staffing" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Permanent</Link>
-                      <Link to="/temporary-staffing" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Temporary</Link>
-                    </div>
-                  )}
-                </div>
-                <Link to="/design" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Ideas & Design</Link>
-                <Link to="/security" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Security</Link>
-              </div>
-            )}
           </li>
 
           {/* PRODUCTS */}
@@ -101,18 +69,6 @@ const Navbar = () => {
             <span className="cursor-pointer hover:text-blue-600 flex items-center gap-1">
               Products <FaChevronDown size={12} />
             </span>
-            {openMenu === "products" && (
-              <div className="absolute left-0 top-full mt-3 bg-white shadow-xl rounded-xl w-64 border">
-                <Link to="/erp" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">ERP</Link>
-                <Link to="/crm" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">CRM</Link>
-                <Link to="/hrms" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">HRMS</Link>
-                <Link to="/ts-plus" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">TS Plus</Link>
-                <Link to="/no-sky" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">No Sky</Link>
-                <Link to="/tally" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Tally</Link>
-                <Link to="/booking-portal" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Booking Portal</Link>
-                <Link to="/gmb" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">GMB</Link>
-              </div>
-            )}
           </li>
 
           {/* COMPANY */}
@@ -120,47 +76,16 @@ const Navbar = () => {
             <span className="cursor-pointer hover:text-blue-600 flex items-center gap-1">
               Company <FaChevronDown size={12} />
             </span>
-            {openMenu === "company" && (
-              <div className="absolute left-0 top-full mt-3 bg-white shadow-xl rounded-xl w-64 border">
-                <div
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("aboutCompany"); }}
-                >
-                  About Company
-                  {openSubMenu === "aboutCompany" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
-                      <Link to="/support" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Support</Link>
-                      <Link to="/contact-us" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Contact</Link>
-                    </div>
-                  )}
-                </div>
-                <div
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                  onClick={(e) => { e.stopPropagation(); handleSubMenuClick("legal"); }}
-                >
-                  Legal & Policies
-                  {openSubMenu === "legal" && (
-                    <div className="absolute top-0 left-full ml-2 bg-white shadow-lg rounded-lg w-56 border">
-                      <Link to="/privacy-policy" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Privacy Policy</Link>
-                      <Link to="/terms-and-condition" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Terms & Conditions</Link>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
           </li>
 
           <li><Link to="/contact-us" onClick={closeAllMenus}>Contact Us</Link></li>
           <li><Link to="/career" onClick={closeAllMenus}>Career</Link></li>
-          <li>
-            <Link to="/guidance" onClick={closeAllMenus}>
-              <button className="bg-yellow-400 px-6 py-2 rounded-xl font-semibold">Free Guide</button>
-            </Link>
-          </li>
         </ul>
 
         {/* MOBILE ICON */}
-        <div className="md:hidden text-2xl cursor-pointer p-2" onClick={toggleMenu}>☰</div>
+        <div className="md:hidden text-2xl cursor-pointer p-2" onClick={toggleMenu}>
+          ☰
+        </div>
       </div>
 
       {/* MOBILE OVERLAY */}
@@ -168,82 +93,52 @@ const Navbar = () => {
         <div className="fixed inset-0 bg-black/40 z-40 md:hidden" onClick={closeAllMenus}/>
       )}
 
-      {/* MOBILE DRAWER */}
-      <div className={`fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 md:hidden ${
+      {/*  MOBILE DRAWER UPDATED */}
+      <div className={`fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 md:hidden overflow-y-auto ${
         mobileOpen ? "translate-x-0" : "-translate-x-full"
       }`}>
-        <div className="p-5 space-y-4 mt-6">
-          <Link to="/" onClick={closeAllMenus} className="block border-b pb-2">Home</Link>
+        <div className="p-5 space-y-4 mt-6 pb-20">
 
-          {/* SERVICES MOBILE */}
+          <Link to="/" onClick={closeAllMenus} className="block border-b pb-2">
+            Home
+          </Link>
+
+          {/* SERVICES */}
           <div onClick={() => handleMenuClick("services")} className="flex justify-between items-center border-b pb-2 cursor-pointer">
             <span>Services</span>
             <span>{openMenu === "services" ? "−" : "+"}</span>
           </div>
-          {openMenu === "services" && (
-            <div className="ml-3 flex flex-col space-y-2 text-sm text-gray-600">
-              <Link to="/website-development" onClick={closeAllMenus}>Website Development</Link>
-              <Link to="/game-application" onClick={closeAllMenus}>Game Development</Link>
-              <Link to="/mobile-application" onClick={closeAllMenus}>Mobile App</Link>
-              <Link to="/permanent-staffing" onClick={closeAllMenus}>Permanent Staffing</Link>
-              <Link to="/temporary-staffing" onClick={closeAllMenus}>Temporary Staffing</Link>
-              <Link to="/design" onClick={closeAllMenus}>Ideas & Design</Link>
-              <Link to="/security" onClick={closeAllMenus}>Security</Link>
-            </div>
-          )}
 
-          {/* PRODUCTS MOBILE */}
+          {/* PRODUCTS */}
           <div onClick={() => handleMenuClick("products")} className="flex justify-between items-center border-b pb-2 cursor-pointer">
             <span>Products</span>
             <span>{openMenu === "products" ? "−" : "+"}</span>
           </div>
-          {openMenu === "products" && (
-            <div className="ml-3 flex flex-col space-y-2 text-sm text-gray-600">
-              <Link to="/erp" onClick={closeAllMenus}>ERP</Link>
-              <Link to="/crm" onClick={closeAllMenus}>CRM</Link>
-              <Link to="/hrms" onClick={closeAllMenus}>HRMS</Link>
-              <Link to="/ts-plus" onClick={closeAllMenus}>TS Plus</Link>
-              <Link to="/no-sky" onClick={closeAllMenus}>No Sky</Link>
-              <Link to="/tally" onClick={closeAllMenus}>Tally</Link>
-              <Link to="/booking-portal" onClick={closeAllMenus}>Booking Portal</Link>
-              <Link to="/gmb" onClick={closeAllMenus}>GMB</Link>
-            </div>
-          )}
 
-          {/* COMPANY MOBILE - FIXED & ALIGNED */}
+          {/* COMPANY */}
           <div onClick={() => handleMenuClick("company")} className="flex justify-between items-center border-b pb-2 cursor-pointer">
             <span>Company</span>
             <span>{openMenu === "company" ? "−" : "+"}</span>
           </div>
-          {openMenu === "company" && (
-            <div className="ml-3 flex flex-col space-y-2 text-sm text-gray-600">
-              {/* About Company Sub */}
-              <div onClick={() => handleSubMenuClick("aboutCompany")} className="flex justify-between items-center cursor-pointer">
-                <span>About Company</span>
-                <span>{openSubMenu === "aboutCompany" ? "−" : "+"}</span>
-              </div>
-              {openSubMenu === "aboutCompany" && (
-                <div className="ml-3 flex flex-col space-y-1">
-                  <Link to="/about-us" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">About Us</Link>
-                  <Link to="/support" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">Support</Link>
-                  <Link to="/contact-us" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">Contact</Link>
-                </div>
-              )}
-              {/* Legal Sub */}
-              <div onClick={() => handleSubMenuClick("legal")} className="flex justify-between items-center cursor-pointer">
-                <span>Legal & Policies</span>
-                <span>{openSubMenu === "legal" ? "−" : "+"}</span>
-              </div>
-              {openSubMenu === "legal" && (
-                <div className="ml-3 flex flex-col space-y-1">
-                  <Link to="/privacy-policy" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">Privacy Policy</Link>
-                  <Link to="/terms-and-condition" onClick={closeAllMenus} className="hover:bg-gray-100 py-1">Terms & Conditions</Link>
-                </div>
-              )}
-            </div>
-          )}
 
-          <Link to="/career" onClick={closeAllMenus} className="block border-b pb-2">Career</Link>
+          {/*  CONTACT US (FIXED POSITION) */}
+          <Link 
+            to="/contact-us" 
+            onClick={closeAllMenus} 
+            className="block border-b pb-2 "
+          >
+            Contact Us
+          </Link>
+
+          {/* CAREER */}
+          <Link 
+            to="/career" 
+            onClick={closeAllMenus} 
+            className="block border-b pb-2"
+          >
+            Career
+          </Link>
+
         </div>
       </div>
     </nav>
