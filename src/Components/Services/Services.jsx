@@ -3,9 +3,8 @@
 
 
 
-
 import React from "react";
-import { Link } from "react-router-dom";  
+import { Link } from "react-router-dom";
 
 import {
   FaLaptopCode,
@@ -78,71 +77,75 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 px-6 md:px-12">
+    <section className="py-20 bg-gray-50">
+      {/*  Centered Container (NOT full width) */}
+      <div className="max-w-5xl mx-auto px-4">
 
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
-          Our Services
-        </h2>
-        <p className="text-gray-600">
-          Comprehensive technology solutions tailored to your business needs
-        </p>
-      </div>
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            Our Services
+          </h2>
+          <p className="text-gray-600">
+            Comprehensive technology solutions tailored to your business needs
+          </p>
+        </div>
 
-      <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        spaceBetween={30}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-        }}
-      >
+        {/* Swiper */}
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          spaceBetween={20} 
+          slidesPerView={2}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+          }}
+          className="rounded-xl overflow-hidden"
+        >
+          {services.map((service, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="bg-white p-8 h-full border border-gray-200 
+                transition duration-300 hover:shadow-xl 
+                hover:border-blue-500"
+              >
+                {/* Icon + Title */}
+                <div className="flex items-center gap-3 mb-5">
+                  <div
+                    className="w-12 h-12 bg-blue-100 text-blue-600 
+                    flex items-center justify-center 
+                    rounded-md text-xl"
+                  >
+                    {service.icon}
+                  </div>
 
-        {services.map((service, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="bg-white p-8 rounded-lg border border-gray-200 
-              transition duration-300 hover:-translate-y-2 
-              hover:shadow-xl hover:border-blue-500 
-              h-full max-w-sm mx-auto"
-            >
-
-              {/* Icon + Title */}
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 
-                flex items-center justify-center 
-                rounded-md text-xl">
-                  {service.icon}
+                  <h3 className="text-xl font-semibold">
+                    {service.title}
+                  </h3>
                 </div>
 
-                <h3 className="text-xl font-semibold">
-                  {service.title}
-                </h3>
+                {/* Description */}
+                <ul className="space-y-2 text-gray-600 mb-5 ml-6">
+                  {service.items.map((item, i) => (
+                    <li key={i}>• {item}</li>
+                  ))}
+                </ul>
+
+                {/* Link */}
+                <Link
+                  to={service.link}
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  Learn More →
+                </Link>
               </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-              {/* List */}
-              <ul className="space-y-2 text-gray-600 mb-5 ml-6">
-                {service.items.map((item, i) => (
-                  <li key={i}>• {item}</li>
-                ))}
-              </ul>
-
-              {/* React Router Link */}
-              <Link
-                to={service.link}
-                className="text-blue-600 font-semibold hover:underline transition"
-              >
-                Learn More →
-              </Link>
-
-            </div>
-          </SwiperSlide>
-        ))}
-
-      </Swiper>
-
+      </div>
     </section>
   );
 };

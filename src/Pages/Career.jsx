@@ -10,6 +10,7 @@ import {
   FaMoneyBillWave,
   FaGlobe,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -113,9 +114,11 @@ const Career = () => {
           Explore exciting opportunities and become part of a team that values
           innovation, creativity, and growth.
         </p>
+        <Link to="/contact-us">
         <button className="bg-white text-blue-900 px-6 py-2 rounded-lg font-medium hover:bg-gray-200 transition">
           View Open Positions
         </button>
+        </Link>
       </div>
     </div>
   );
