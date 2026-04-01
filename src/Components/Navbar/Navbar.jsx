@@ -1,15 +1,10 @@
 
 
-
-
-
-
-
-
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 import { FaChevronDown } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -163,8 +158,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* MOBILE ICON */}
-        <div className="md:hidden text-2xl cursor-pointer p-2" onClick={toggleMenu}>☰</div>
+       
+        <div
+  className="md:hidden text-2xl cursor-pointer p-2"
+  onClick={toggleMenu}
+>
+  <FaBars />
+</div>
       </div>
 
       {/* MOBILE OVERLAY */}
