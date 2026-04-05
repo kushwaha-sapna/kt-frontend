@@ -1,20 +1,14 @@
-
-
-
-
-
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
-  FaGamepad,
+  FaShoppingCart,
   FaMobileAlt,
-  FaVrCardboard,
+  FaLock,
   FaCheckCircle
 } from "react-icons/fa";
 
-const GameApplication = () => {
- 
+const Ecommerce = () => {
+
 
   return (
     <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
@@ -23,45 +17,44 @@ const GameApplication = () => {
 
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
-          Game Application Development
+          E-commerce Development Services
         </h1>
 
         {/* Description */}
         <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
-          We create engaging, high-performance game applications designed to deliver
-          immersive experiences across mobile, web, and next-gen platforms.
+          We build powerful, scalable, and user-friendly eCommerce websites that help businesses grow online, attract customers, and boost sales.
         </p>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-            <FaGamepad className="text-purple-600 text-4xl mb-4 mx-auto" />
+            <FaShoppingCart className="text-blue-600 text-4xl mb-4 mx-auto" />
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              Game Design
+              Custom Store Development
             </h3>
             <p className="text-gray-600">
-              Creative and interactive game design with engaging UI/UX and captivating gameplay.
+              Fully customized eCommerce platforms designed according to your business needs.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-            <FaMobileAlt className="text-blue-600 text-4xl mb-4 mx-auto" />
+            <FaMobileAlt className="text-green-600 text-4xl mb-4 mx-auto" />
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              Mobile Games
+              Mobile Responsive
             </h3>
             <p className="text-gray-600">
-              High-performance Android and iOS games optimized for smooth and responsive gameplay.
+              Optimized for all devices to ensure a smooth shopping experience.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-            <FaVrCardboard className="text-pink-600 text-4xl mb-4 mx-auto" />
+            <FaLock className="text-purple-600 text-4xl mb-4 mx-auto" />
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              AR/VR Games
+              Secure & Scalable
             </h3>
             <p className="text-gray-600">
-              Immersive augmented and virtual reality gaming experiences using cutting-edge technology.
+              Advanced security and scalable architecture for growing businesses.
             </p>
           </div>
 
@@ -73,26 +66,25 @@ const GameApplication = () => {
           {/* Left */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Our Game Solutions?
+              Why Choose Our eCommerce Solutions?
             </h2>
 
             <p className="text-gray-600 mb-4">
-              Our team combines creativity with advanced technology to build games
-              that stand out in today’s competitive market.
+              We combine modern technology with business strategy to create high-performing eCommerce platforms.
             </p>
 
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500 text-sm" />
-                Smooth performance & optimization
+                Fast loading & optimized performance
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500 text-sm" />
-                Cross-platform compatibility
+                SEO-friendly architecture
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500 text-sm" />
-                Engaging user experience
+                Easy product & order management
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500 text-sm" />
@@ -102,18 +94,18 @@ const GameApplication = () => {
           </div>
 
           {/* Right */}
-          <div className="bg-purple-100 p-8 rounded-2xl text-center">
+          <div className="bg-blue-100 p-8 rounded-2xl text-center">
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              Ready to Build Your Game?
+              Ready to Launch Your Store?
             </h3>
 
             <p className="text-gray-600 mb-6">
-              Let’s turn your game idea into reality with our expert development team.
+              Let’s build a powerful eCommerce website that grows your business.
             </p>
 
             <Link
               to="/contact-us"
-              className="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700 hover:scale-105 transition-all duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 hover:scale-105 transition-all duration-300 inline-block"
             >
               Get Started
             </Link>
@@ -121,27 +113,11 @@ const GameApplication = () => {
 
         </div>
 
-        {/* CTA */}
-        <div className="mt-20 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center py-12 rounded-2xl shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Let’s Build the Next Big Game
-          </h2>
-
-          <p className="mb-6">
-            Partner with us to create innovative and engaging gaming experiences.
-          </p>
-
-          <Link
-            to="/contact-us"
-            className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 hover:scale-105 transition-all duration-300 inline-block"
-          >
-            Contact Us
-          </Link>
-        </div>
+        
 
       </div>
     </div>
   );
 };
 
-export default GameApplication;
+export default Ecommerce;

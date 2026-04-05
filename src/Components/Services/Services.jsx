@@ -15,6 +15,7 @@ import {
   FaPenNib,
   FaUsers,
   FaShieldAlt,
+  FaShoppingCart,
 } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -73,6 +74,12 @@ const Services = () => {
       title: "Cybersecurity",
       link: "/cybersecurity",
       items: ["Protect your business with advanced security solutions."],
+    },
+     {
+      icon: <FaShoppingCart />,
+      title: "E-commerce",
+      link: "/ecommerce",
+      items: ["Turning your vision into impactful solutions."],
     },
   ];
 

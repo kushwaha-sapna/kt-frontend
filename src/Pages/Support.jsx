@@ -102,16 +102,27 @@ const Support = () => {
           Get in Touch
         </h2>
 
-        <div className="max-w-4xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+         <div className="max-w-4xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6">
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition cursor-pointer">
             <FaEnvelope className="text-blue-900 text-2xl mx-auto mb-2" />
             <p className="font-medium">support@kttechnology.com</p>
-          </div>
+          </div>  
+
+
+
+
+
+
+
+
+
+
+
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <FaPhoneAlt className="text-blue-900 text-2xl mx-auto mb-2" />
-            <p className="font-medium">+91-XXXXXXXXXX</p>
+            <p className="font-medium">+91-8840945936</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">

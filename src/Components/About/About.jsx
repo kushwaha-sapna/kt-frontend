@@ -6,6 +6,8 @@ import {
   FaLightbulb,
   FaUsers,
   FaRocket,
+   FaAtom ,
+   FaHandshake,
 } from "react-icons/fa";
 
 const About = () => {
@@ -13,25 +15,37 @@ const About = () => {
     {
       icon: <FaBullseye />,
       title: "Our Focus",
-      desc: "Delivering cutting-edge solutions that solve complex business challenges.",
+      desc: "Empowering businesses with innovative technology to overcome complex challenges.",
       active: false,
     },
     {
       icon: <FaLightbulb />,
       title: "Our Approach",
-      desc: "Combining technical excellence with strategic thinking for customized solutions.",
+      desc: "Engineering smarter solutions with a human-centered strategy.",
       active: false,
     },
     {
       icon: <FaUsers />,
       title: "Our Team",
-      desc: "Passionate experts committed to innovation and exceptional results.",
+      desc: "A dynamic collective of innovators,driven by passion and united in delivering transformative results.",
       active: false,
     },
     {
       icon: <FaRocket />,
       title: "Our Vision",
-      desc: "To be the global leader in technology innovation and digital transformation.",
+      desc: "To shape the future of digital transformation by creating innovative technologies that empower businesses worldwide.",
+      active: false,
+    },
+     {
+      icon:  <FaAtom />,
+      title: "Innovation",
+      desc: "Combining visionary thinking with advanced tech to deliver impart beyond boundaries.",
+      active: false,
+    },
+     {
+      icon: <FaHandshake />,
+      title: "Customer Focus",
+      desc: "Your vision becomes our blueprint completely-their solutions helped us scale faster and smarter.",
       active: false,
     },
   ];
@@ -39,7 +53,8 @@ const About = () => {
   return (
     <section className="py-20 px-6 md:px-10 bg-white ">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {cards.map((card, index) => (
           <div

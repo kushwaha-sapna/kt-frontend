@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import slider1 from "../../assets/slider1.jpg";
 import slider2 from "../../assets/slider2.jpg";
+import { FaStar } from "react-icons/fa";
 
 function Hero() {
   const images = [slider1, slider2];
@@ -33,17 +34,17 @@ function Hero() {
         <div className="container mx-auto px-6">
           <div className="max-w-2xl text-white">
 
-            <p className="bg-white text-[#c79b2c] px-4 py-2 rounded-full inline-block font-semibold text-sm">
-              ⭐ Trusted by 120+ Clients Worldwide
-            </p>
+            <p className="bg-white text-[#c79b2c] px-4 py-2 rounded-full inline-flex items-center gap-2 font-semibold text-sm">
+  <FaStar className="text-xs" />
+  Where trust meets global reach
+</p>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-4">
-              Drive Business Growth with Expert Technology Solutions
+              Next-Gen Solutions for Modern Businesses
             </h1>
 
             <p className="text-gray-200 mb-8 text-base md:text-lg">
-              Unlock your business's full potential with cutting-edge technology
-              solutions tailored to your goals.
+             Fuel your growth with technology designed for your sucess.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

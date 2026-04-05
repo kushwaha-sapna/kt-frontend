@@ -108,21 +108,21 @@ const API_BASE ='https://kt-technology-backend.onrender.com/api'
           <FaPhoneAlt className="text-blue-900 text-3xl mx-auto mb-3" />
           <h3 className="font-semibold text-lg mb-2">Phone</h3>
           <p className="text-sm text-gray-600">
-            +91-8882822733
+            +91-8840945936
           </p>
         </div>
 
-        {/* Email */}
-        <div className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
-          <FaEnvelope className="text-blue-900 text-3xl mx-auto mb-3" />
-          <h3 className="font-semibold text-lg mb-2">Email</h3>
-          <a
-            href="mailto:info@zynextro.com"
-            className="text-sm text-blue-700 hover:underline"
-          >
-            info@zynextro.com
-          </a>
-        </div>
+      {/* Email */}
+<div className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+  <FaEnvelope className="text-blue-900 text-3xl mx-auto mb-3" />
+  <h3 className="font-semibold text-lg mb-2">Email</h3>
+  <a
+    href="mailto:info@zynextro.com"
+    className="text-sm text-gray-600 hover:text-blue-600 transition"
+  >
+    info@zynextro.com
+  </a>
+</div>
 
         {/* Working Hours */}
         <div className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">

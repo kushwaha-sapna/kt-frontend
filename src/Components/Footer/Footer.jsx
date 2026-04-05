@@ -67,7 +67,7 @@ const Footer = () => {
           <p className="text-sm mb-2">
             xyz,Noida
           </p>
-          <p className="text-sm mb-2">Phone: +91 xzy</p>
+          <p className="text-sm mb-2">Phone: +91 8840945936</p>
           <p className="text-sm mb-2">Email: info@kt-technology.com</p>
           <p className="text-sm">Mon - Sat: 10:00 AM - 19:00 PM</p>
         </div>

@@ -4,6 +4,7 @@
 
 
 import React from "react";
+import ContactUs from "./ContactUs";
 import {
   FaCheckCircle,
   FaCloud,
@@ -56,24 +57,28 @@ const guidanceSections = [
 
 const clientTestimonials = [
   {
-    quote: "KT Technology’s guidance made our digital transformation journey seamless. The structured approach helped us implement changes efficiently.",
-    name: "Sarah Johnson",
-    designation: "CEO, TechStart Inc.",
+    quote: "KT-Technology transformed our business completely-their solution helped us scale faster and smarter .",
+    name: "Mr. Vipin",
+    designation: "Medical Business Owner.",
   },
   {
-    quote: "Following KT Technology’s roadmap allowed us to improve operations without disruption. Immediate efficiency gains were visible.",
-    name: "Michael Chen",
-    designation: "CTO, InnovateNow",
+    quote: "KT-Technology helped us scale our online store seamlessly-from design to performance,everything improved.",
+    name: "Shivam",
+    designation: "E-commerce Website Owner",
   },
   {
-    quote: "The security insights alone saved us thousands. Real-world examples made the guide highly practical.",
-    name: "Emily Rodriguez",
-    designation: "IT Director, SecureBase",
+    quote: "KT-Technology gave my business the boost it needed-their innovation solution made growth effortless..",
+    name: "Rishabh",
+    designation: "Entrepreneur",
   },
 ];
 
 const Guidance = () => {
   return (
+    <div>
+     <div className="mb-16">
+        <ContactUs />
+      </div>
     <section className="bg-gray-50 py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
 
@@ -156,6 +161,7 @@ const Guidance = () => {
 
       </div>
     </section>
+    </div>
   );
 };
 

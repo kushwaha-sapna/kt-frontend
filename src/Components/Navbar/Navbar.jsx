@@ -72,6 +72,7 @@ const Navbar = ({ isHome }) => {
                       <Link to="/website-development" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Website Development</Link>
                       <Link to="/game-application" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Game Development</Link>
                       <Link to="/mobile-application" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Mobile App</Link>
+                       <Link to="/ecommerce" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">E-commerce </Link>
                     </div>
                   )}
                 </div>
@@ -186,6 +187,7 @@ const Navbar = ({ isHome }) => {
               <Link to="/website-development" onClick={closeAllMenus}>Website Development</Link>
               <Link to="/game-application" onClick={closeAllMenus}>Game Development</Link>
               <Link to="/mobile-application" onClick={closeAllMenus}>Mobile App</Link>
+                <Link to="/ecommerce" onClick={closeAllMenus}>E-commerce</Link>
               <Link to="/permanent-staffing" onClick={closeAllMenus}>Permanent Staffing</Link>
               <Link to="/temporary-staffing" onClick={closeAllMenus}>Temporary Staffing</Link>
               <Link to="/design" onClick={closeAllMenus}>Ideas & Design</Link>

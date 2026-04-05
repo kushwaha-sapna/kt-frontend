@@ -1,30 +1,19 @@
+
 import React from "react";
 import { Star, Trophy, Users, BadgeCheck, Globe } from "lucide-react";
 
 const clients = [
   {
-    name: "Hey Step Up",
-    rating: 4.8,
-    reviews: "245+ reviews",
-    tag: "VERIFIED",
-  },
-  {
-    name: "The Achievers Award Council",
+    name: "Vinay E Estate",
     rating: 4.6,
-    reviews: "189+ reviews",
-    tag: "PARTNER",
+    reviews: "45+ reviews",
+    tag: "REAL ESTATE",
   },
   {
-    name: "Du Reality & Manpower",
-    rating: 4.9,
-    reviews: "312+ reviews",
-    tag: "TRUSTED",
-  },
-  {
-    name: "Home Service 99",
-    rating: 4.7,
-    reviews: "156+ reviews",
-    tag: "CLIENT",
+    name: "Deepak Restaurant",
+    rating: 4.5,
+    reviews: "38+ reviews",
+    tag: "RESTAURANT",
   },
 ];
 
@@ -37,12 +26,12 @@ const TrustedClients = () => {
           Trusted by Our Valued Clients
         </h2>
         <p className="text-gray-400 mt-3">
-          Join hundreds of satisfied clients who trust our expertise
+          Growing businesses that trust our expertise
         </p>
       </div>
 
       {/* Client Cards */}
-      <div className="grid md:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {clients.map((client, index) => (
           <div
             key={index}
@@ -76,18 +65,18 @@ const TrustedClients = () => {
         ))}
       </div>
 
-      {/* Stats Section
-      <div className="mt-12 bg-gradient-to-r from-black to-gray-900 border border-gray-800 rounded-xl p-8 grid md:grid-cols-4 gap-6 text-center">
+      {/* Stats Section */}
+      <div className="mt-12 bg-gradient-to-r from-black to-gray-900 border border-gray-800 rounded-xl p-8 grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
         
         <div>
           <Trophy className="mx-auto text-yellow-400 mb-2" />
-          <h3 className="text-xl font-bold text-yellow-400">4.8</h3>
+          <h3 className="text-xl font-bold text-yellow-400">4.6</h3>
           <p className="text-gray-400 text-sm">Average Rating</p>
         </div>
 
         <div>
           <Users className="mx-auto text-yellow-400 mb-2" />
-          <h3 className="text-xl font-bold text-yellow-400">120+</h3>
+          <h3 className="text-xl font-bold text-yellow-400">25+</h3>
           <p className="text-gray-400 text-sm">Happy Clients</p>
         </div>
 
@@ -99,11 +88,11 @@ const TrustedClients = () => {
 
         <div>
           <Globe className="mx-auto text-yellow-400 mb-2" />
-          <h3 className="text-xl font-bold text-yellow-400">8+</h3>
-          <p className="text-gray-400 text-sm">Countries Served</p>
+          <h3 className="text-xl font-bold text-yellow-400">2+</h3>
+          <p className="text-gray-400 text-sm">Regions Served</p>
         </div>
 
-      </div> */}
+      </div> 
     </section>
   );
 };
