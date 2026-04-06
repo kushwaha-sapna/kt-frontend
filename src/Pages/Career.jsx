@@ -54,7 +54,8 @@ const Career = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-6 md:px-16">
+   
+    <div className="bg-indigo-100 pt-10">
       
       {/* Header */}
       <div className="text-center mb-12">

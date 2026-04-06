@@ -3,6 +3,7 @@
 
 import React from "react";
 import clientTestimonials from "../../data/clientTestimonials";
+import { FaStar } from "react-icons/fa";
 
 const ClientTestimonial = () => {
   return (
@@ -14,7 +15,7 @@ const ClientTestimonial = () => {
           Client Testimonials
         </h2>
         <p className="text-gray-500 text-sm mt-1">
-          What our clients say 💬
+          What our clients say 
         </p>
       </div>
 
@@ -24,7 +25,9 @@ const ClientTestimonial = () => {
         {clientTestimonials.map((item) => (
           <div
             key={item.id}
-            className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition"
+            className="bg-white p-4 rounded-xl shadow-md 
+                             hover:shadow-2xl hover:-translate-y-2 hover:scale-105 
+                               transition-all duration-300 ease-in-out cursor-pointer"
           >
             {/* User */}
             <div className="flex items-center gap-3 mb-3">
@@ -46,12 +49,19 @@ const ClientTestimonial = () => {
 
             {/* Rating */}
             <div className="flex text-yellow-400 text-sm">
-              {Array.from({ length: item.rating }).map((_, i) => (
+              {/* {Array.from({ length: item.rating }).map((_, i) => (
                 <span key={i}>★</span>
               ))}
               {Array.from({ length: 5 - item.rating }).map((_, i) => (
                 <span key={i} className="text-gray-300">★</span>
-              ))}
+              ))} */}
+              {Array.from({ length: item.rating }).map((_, i) => (
+  <FaStar key={i} className="text-yellow-400" />
+))}
+
+{Array.from({ length: 5 - item.rating }).map((_, i) => (
+  <FaStar key={i} className="text-gray-300" />
+))}
             </div>
           </div>
         ))}

@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Marquee from "./Components/Marquee/Marquee";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
+import Automation from "./Components/Automation/Automation";
 import Services from "./Components/Services/Services";
 import IndustriesSection from "./Components/IndustriesSection/IndustriesSection";
 import CoreValues from "./Components/CoreValues/CoreValues";
@@ -52,6 +53,7 @@ import BookingPortal from "./Pages/BookingPortal.jsx";
 import GMB from "./Pages/GMB.jsx";
 import Ecommerce from "./Pages/Ecommerce.jsx";
 
+
 const App = () => {
   const location = useLocation();
   const [isHome, setIsHome] = useState(location.pathname === "/");
@@ -66,7 +68,8 @@ const App = () => {
       {isHome && <Marquee />}
       <Navbar isHome={isHome} />
 
-      <div style={{ paddingTop: isHome ? "4rem" : "0" }}>
+      {/* <div style={{ paddingTop: isHome ? "4rem" : "0" }}> */}
+      <div className="pt-15">
         <Routes>
           {/* HOME */}
           <Route
@@ -78,6 +81,7 @@ const App = () => {
                 <About />
                 <Services />
                 <Products />
+                <Automation/>
                 <CoreValues />
                 <IndustriesSection />
                 <ClientTestimonial />

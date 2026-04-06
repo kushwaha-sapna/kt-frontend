@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import slider1 from "../../assets/slider1.jpg";
+import slider1 from "../../assets/slider1.png";
 import slider2 from "../../assets/slider2.jpg";
 import { FaStar } from "react-icons/fa";
 

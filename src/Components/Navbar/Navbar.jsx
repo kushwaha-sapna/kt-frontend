@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
-import { FaChevronDown } from "react-icons/fa";
-import { FaBars } from "react-icons/fa";
+import { FaChevronDown ,FaBars,FaCogs, FaUsers, FaUserTie, FaCloud, FaRocket, FaCalculator, FaCalendarAlt, FaGlobe } from "react-icons/fa";
 
 const Navbar = ({ isHome }) => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -50,8 +49,8 @@ const Navbar = ({ isHome }) => {
         </Link>
 
         {/* DESKTOP */}
-        <ul className="hidden md:flex items-center gap-8 font-medium text-gray-700">
-          <li>
+        <ul className="hidden md:flex items-center gap-8 font-medium   text-gray-700">
+          <li className=" hover:text-blue-600">
             <Link to="/" onClick={closeAllMenus}>Home</Link>
           </li>
 
@@ -100,16 +99,42 @@ const Navbar = ({ isHome }) => {
               Products <FaChevronDown size={12} />
             </span>
             {openMenu === "products" && (
+            
               <div className="absolute left-0 top-full mt-3 bg-white shadow-xl rounded-xl w-64 border">
-                <Link to="/erp" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">ERP</Link>
-                <Link to="/crm" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">CRM</Link>
-                <Link to="/hrms" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">HRMS</Link>
-                <Link to="/ts-plus" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">TS Plus</Link>
-                <Link to="/no-sky" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">No Sky</Link>
-                <Link to="/tally" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Tally</Link>
-                <Link to="/booking-portal" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">Booking Portal</Link>
-                <Link to="/gmb" onClick={closeAllMenus} className="block px-4 py-2 hover:bg-gray-100">GMB</Link>
-              </div>
+
+  <Link to="/erp" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaCogs className="text-blue-600" /> ERP
+  </Link>
+
+  <Link to="/crm" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaUsers className="text-blue-600" /> CRM
+  </Link>
+
+  <Link to="/hrms" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaUserTie className="text-blue-600" /> HRMS
+  </Link>
+
+  <Link to="/ts-plus" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaCloud className="text-blue-600" /> TS Plus
+  </Link>
+
+  <Link to="/no-sky" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaRocket className="text-blue-600" /> No Sky
+  </Link>
+
+  <Link to="/tally" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaCalculator className="text-blue-600" /> Tally
+  </Link>
+
+  <Link to="/booking-portal" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaCalendarAlt  className="text-blue-600"/> Booking Portal
+  </Link>
+
+  <Link to="/gmb" onClick={closeAllMenus} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+    <FaGlobe  className="text-blue-600"/> GMB
+  </Link>
+
+</div>
             )}
           </li>
 
@@ -148,9 +173,9 @@ const Navbar = ({ isHome }) => {
             )}
           </li>
 
-          <li><Link to="/contact-us" onClick={closeAllMenus}>Contact Us</Link></li>
-          <li><Link to="/career" onClick={closeAllMenus}>Career</Link></li>
-          <li>
+          <li className=" hover:text-blue-600"><Link to="/contact-us" onClick={closeAllMenus}>Contact Us</Link></li>
+          <li className=" hover:text-blue-600"><Link to="/career" onClick={closeAllMenus}>Career</Link></li>
+          <li className=" hover:text-blue-600">
             <Link to="/guidance" onClick={closeAllMenus}>
               <button className="bg-yellow-400 px-6 py-2 rounded-xl font-semibold">Free Guide</button>
             </Link>
