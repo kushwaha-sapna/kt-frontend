@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import logo from "../../assets/logo.jpeg";
 import { FaChevronDown } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = ({ isHome }) => {
+  const { isAuthenticated } = useAuth();
   const [openMenu, setOpenMenu] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -149,6 +151,15 @@ const Navbar = ({ isHome }) => {
 
           <li><Link to="/contact-us" onClick={closeAllMenus}>Contact Us</Link></li>
           <li><Link to="/career" onClick={closeAllMenus}>Career</Link></li>
+          {isAuthenticated ? (
+            <li>
+              <Link to="/admin/dashboard" onClick={closeAllMenus}>Admin Dashboard</Link>
+            </li>
+          ) : (
+            <li>
+              <Link to="/admin/login" onClick={closeAllMenus}>Admin Login</Link>
+            </li>
+          )}
           <li>
             <Link to="/guidance" onClick={closeAllMenus}>
               <button className="bg-yellow-400 px-6 py-2 rounded-xl font-semibold">Free Guide</button>
@@ -245,6 +256,11 @@ const Navbar = ({ isHome }) => {
           <Link to="/contact-us" onClick={closeAllMenus} className="block border-b pb-2">Contact Us</Link>
 
           <Link to="/career" onClick={closeAllMenus} className="block border-b pb-2">Career</Link>
+          {isAuthenticated ? (
+            <Link to="/admin/dashboard" onClick={closeAllMenus} className="block border-b pb-2">Admin Dashboard</Link>
+          ) : (
+            <Link to="/admin/login" onClick={closeAllMenus} className="block border-b pb-2">Admin Login</Link>
+          )}
         </div>
       </div>
     </nav>

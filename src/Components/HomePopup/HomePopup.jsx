@@ -17,7 +17,7 @@ const HomePopup = () => {
   const [message, setMessage] = useState({ show: false, type: '', text: '' });
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const API_BASE = 'https://kt-technology-backend.onrender.com/api';
+const API_BASE = 'https://kt-technology-backend.onrender.com/api';
 
   useEffect(() => {
     setIsPopupOpen(true);
@@ -177,7 +177,7 @@ const HomePopup = () => {
           </select>
 
           <input
-            type="text"
+            type="Number"
             name="budget"
             value={formData.budget}
             onChange={handleChange}

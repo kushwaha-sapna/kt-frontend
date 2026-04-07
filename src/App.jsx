@@ -47,6 +47,8 @@ import NoSky from "./Pages/NoSky.jsx";
 import Tally from "./Pages/Tally.jsx";
 import BookingPortal from "./Pages/BookingPortal.jsx";
 import GMB from "./Pages/GMB.jsx";
+import AdminLogin from "./Pages/AdminLogin.jsx";
+import AdminDashboard from "./Pages/AdminDashboard.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -112,8 +114,12 @@ const App = () => {
           <Route path="/tally" element={<div className="pt-20"><Tally /></div>} />
           <Route path="/booking-portal" element={<div className="pt-20"><BookingPortal /></div>} />
           <Route path="/gmb" element={<div className="pt-20"><GMB /></div>} />
+          <Route path="/admin/login" element={<div className="pt-20"><AdminLogin /></div>} />
+         
+          <Route path="/admin/dashboard" element={<div className="pt-20"><AdminDashboard /></div>} />
 
           <Route path="*" element={<div className="pt-20">Page Not Found</div>} />
+
         </Routes>
       </div>
 
