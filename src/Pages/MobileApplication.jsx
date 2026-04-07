@@ -1,22 +1,11 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaMobileAlt, FaAndroid, FaApple, FaCheckCircle } from "react-icons/fa";
+import { 
+  FaMobileAlt, 
+  FaAndroid, 
+  FaApple, 
+  FaCheckCircle 
+} from "react-icons/fa";
 
 const MobileApplication = () => {
   return (
@@ -34,8 +23,8 @@ const MobileApplication = () => {
         <p className="text-gray-600 max-w-3xl mx-auto text-center mb-10 md:mb-12 text-sm sm:text-base">
           We build powerful, scalable, and user-friendly mobile applications
           that deliver seamless experiences across Android and iOS devices.
-          Our solutions are designed to help businesses grow, engage users, and
-          stay ahead in the digital era with modern mobile technology.
+          Our solutions help businesses grow, improve engagement, and achieve
+          digital transformation with modern technologies.
         </p>
 
         {/* Cards Section */}
@@ -49,7 +38,7 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               Tailored mobile applications designed to meet your business goals and user needs.
-              We focus on intuitive UI, smooth performance, and scalable architecture.
+              We focus on intuitive UI, smooth performance, secure backend, and scalable architecture.
             </p>
           </div>
 
@@ -61,7 +50,7 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               High-performance Android applications with smooth UI and optimized functionality.
-              Built using latest technologies to ensure reliability and scalability.
+              Built using latest tools like React Native & Kotlin for speed and reliability.
             </p>
           </div>
 
@@ -73,7 +62,7 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               Elegant and secure iOS applications built for performance and user experience.
-              Designed with Apple standards to deliver premium quality apps.
+              Designed with Apple guidelines to deliver premium and smooth mobile experience.
             </p>
           </div>
 
@@ -90,8 +79,8 @@ const MobileApplication = () => {
 
             <p className="text-gray-600 mb-4 text-sm md:text-base">
               We deliver mobile apps that are fast, secure, and designed to scale
-              with your business growth. Our team ensures best practices in UI/UX,
-              performance optimization, and security.
+              with your business growth. Our expert developers ensure high-quality
+              performance, modern UI/UX, and strong security implementation.
             </p>
 
             <ul className="text-gray-600 space-y-2 text-sm md:text-base">
@@ -117,7 +106,7 @@ const MobileApplication = () => {
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                Seamless API integration
+                API & third-party integrations
               </li>
             </ul>
           </div>
@@ -129,8 +118,8 @@ const MobileApplication = () => {
             </h3>
 
             <p className="text-gray-600 mb-5 md:mb-6 text-sm md:text-base">
-              Let us help you transform your ideas into powerful mobile applications.
-              Whether it's a startup idea or enterprise solution, we’ve got you covered.
+              Turn your ideas into reality with our expert mobile app development services.
+              We help startups, businesses, and enterprises build scalable mobile solutions.
             </p>
 
             <Link
@@ -150,8 +139,8 @@ const MobileApplication = () => {
           </h2>
 
           <p className="mb-6 text-sm md:text-base">
-            Reach more users and grow faster with our expert mobile app solutions.
-            Start your digital journey with us today and unlock new opportunities.
+            Reach more users, increase engagement, and grow your revenue with our mobile solutions.
+            We deliver high-quality apps tailored to your business needs.
           </p>
 
           <Link
