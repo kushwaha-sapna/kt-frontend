@@ -48,12 +48,11 @@ import NoSky from "./Pages/NoSky.jsx";
 import Tally from "./Pages/Tally.jsx";
 import BookingPortal from "./Pages/BookingPortal.jsx";
 import GMB from "./Pages/GMB.jsx";
-<<<<<<< HEAD
+import Ecommerce from "./Pages/Ecommerce.jsx";
+
+
 import AdminLogin from "./Pages/AdminLogin.jsx";
 import AdminDashboard from "./Pages/AdminDashboard.jsx";
-=======
-import Ecommerce from "./Pages/Ecommerce.jsx";
->>>>>>> 45fb7b8bb1f1040cf4efe91de4ae41e695dd2d93
 
 const App = () => {
   const location = useLocation();
@@ -114,22 +113,7 @@ const App = () => {
           <Route path="/support" element={<Support />} />
           <Route path="/guidance" element={<Guidance />} />
 
-<<<<<<< HEAD
-          <Route path="/erp" element={<div className="pt-20"><ERP /></div>} />
-          <Route path="/crm" element={<div className="pt-20"><CRM /></div>} />
-          <Route path="/hrms" element={<div className="pt-20"><HRMS /></div>} />
-          <Route path="/ts-plus" element={<div className="pt-20"><TSPlus /></div>} />
-          <Route path="/no-sky" element={<div className="pt-20"><NoSky /></div>} />
-          <Route path="/tally" element={<div className="pt-20"><Tally /></div>} />
-          <Route path="/booking-portal" element={<div className="pt-20"><BookingPortal /></div>} />
-          <Route path="/gmb" element={<div className="pt-20"><GMB /></div>} />
-          <Route path="/admin/login" element={<div className="pt-20"><AdminLogin /></div>} />
-         
-          <Route path="/admin/dashboard" element={<div className="pt-20"><AdminDashboard /></div>} />
-
-          <Route path="*" element={<div className="pt-20">Page Not Found</div>} />
-
-=======
+          {/* PRODUCTS */}
           <Route path="/erp" element={<ERP />} />
           <Route path="/crm" element={<CRM />} />
           <Route path="/hrms" element={<HRMS />} />
@@ -140,12 +124,12 @@ const App = () => {
           <Route path="/gmb" element={<GMB />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
 
+          {/* ADMIN */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+
           {/* 404 */}
-          <Route
-            path="*"
-            element={<div className="pt-20">Page Not Found</div>}
-          />
->>>>>>> 45fb7b8bb1f1040cf4efe91de4ae41e695dd2d93
+          <Route path="*" element={<div className="pt-20">Page Not Found</div>} />
         </Routes>
       </div>
 
