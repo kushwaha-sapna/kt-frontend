@@ -10,7 +10,7 @@ import { FaClock, FaUsers, FaCheckCircle } from "react-icons/fa";
 const TemporaryStaffing = () => {
 
   return (
-    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div className="pt-30 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
 
       <div className="max-w-6xl mx-auto">
 
