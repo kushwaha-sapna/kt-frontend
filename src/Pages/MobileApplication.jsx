@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaMobileAlt, FaAndroid, FaApple, FaCheckCircle } from "react-icons/fa";
@@ -20,8 +19,8 @@ const MobileApplication = () => {
           We build powerful, scalable, and user-friendly mobile applications
           that deliver seamless experiences across Android and iOS devices.
           Our solutions help businesses grow, improve engagement, and achieve
-          digital transformation with modern technologies. From startups to
-          enterprises, we create apps that are secure, fast, and future-ready.
+          digital transformation with modern technologies. From idea to launch,
+          we handle the complete mobile development lifecycle with precision.
         </p>
 
         {/* Cards Section */}
@@ -35,7 +34,7 @@ const MobileApplication = () => {
             <p className="text-gray-600 text-sm md:text-base">
               Tailored mobile applications designed to meet your business goals and user needs.
               We focus on intuitive UI, smooth performance, secure backend, and scalable architecture.
-              Our solutions are built to grow with your business.
+              Every app is crafted to deliver a seamless and engaging user experience.
             </p>
           </div>
 
@@ -46,8 +45,8 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               High-performance Android applications with smooth UI and optimized functionality.
-              Built using latest technologies like Kotlin, Java, and modern frameworks to ensure
-              speed, reliability, and scalability.
+              Built using modern technologies ensuring fast loading, efficient memory usage,
+              and compatibility across all Android devices.
             </p>
           </div>
 
@@ -58,8 +57,8 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               Elegant and secure iOS applications built for performance and user experience.
-              Designed with Apple’s guidelines to deliver premium quality apps with smooth
-              navigation and high-end performance.
+              Designed with Apple standards to ensure smooth navigation, premium UI,
+              and high-end functionality across all iOS devices.
             </p>
           </div>
 
@@ -75,36 +74,35 @@ const MobileApplication = () => {
             </h2>
 
             <p className="text-gray-600 mb-4 text-sm md:text-base">
-              We deliver mobile apps that are fast, secure, and designed to scale
-              with your business growth. Our expert developers ensure high-quality
-              performance, modern UI/UX, and strong security implementation.
-              We also provide long-term support and maintenance.
+              We don’t just build apps — we create digital experiences that help your business grow.
+              Our development process includes planning, design, development, testing, and deployment,
+              ensuring a complete end-to-end solution tailored to your goals.
             </p>
 
             <ul className="text-gray-600 space-y-2 text-sm md:text-base">
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                Cross-platform compatibility
+                Cross-platform compatibility (Android & iOS)
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                User-friendly interface
+                Modern UI/UX design with smooth interactions
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                High performance & speed
+                High performance & optimized speed
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                Secure & scalable architecture
+                Secure authentication & data protection
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                Regular updates & maintenance
+                Regular updates & long-term maintenance
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-cyan-600" />
-                API & third-party integrations
+                Scalable architecture for future growth
               </li>
             </ul>
           </div>
@@ -116,9 +114,9 @@ const MobileApplication = () => {
             </h3>
 
             <p className="text-gray-600 mb-5 md:mb-6 text-sm md:text-base">
-              Turn your ideas into reality with our expert mobile app development services.
-              Whether it’s a startup idea, business app, or enterprise solution, we deliver
-              high-quality mobile applications that drive results and user engagement.
+              Turn your ideas into powerful mobile applications with our expert team.
+              We specialize in delivering high-quality, scalable, and user-friendly apps
+              that help businesses increase engagement and revenue.
             </p>
 
             <Link
@@ -138,8 +136,9 @@ const MobileApplication = () => {
           </h2>
 
           <p className="mb-6 text-sm md:text-base">
-            Reach more users, increase engagement, and grow your revenue with our mobile solutions.
-            We deliver high-quality apps tailored to your business needs with modern design and strong performance.
+            In today’s digital world, mobile apps are essential for business success.
+            Our solutions help you reach more customers, improve engagement,
+            and build a strong digital presence with cutting-edge mobile technology.
           </p>
 
           <Link
