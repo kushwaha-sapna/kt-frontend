@@ -1,6 +1,8 @@
 
 
 
+
+
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -53,7 +55,6 @@ import BookingPortal from "./Pages/BookingPortal.jsx";
 import GMB from "./Pages/GMB.jsx";
 import Ecommerce from "./Pages/Ecommerce.jsx";
 
-
 const App = () => {
   const location = useLocation();
   const [isHome, setIsHome] = useState(location.pathname === "/");
@@ -64,12 +65,18 @@ const App = () => {
   }, [location]);
 
   return (
-    <div>
+    /* FIX 1: added 'flex flex-col min-h-screen' 
+       This forces the entire app to be at least the height of the device screen.
+    */
+    <div className="flex flex-col min-h-screen">
       {isHome && <Marquee />}
       <Navbar isHome={isHome} />
 
-      {/* <div style={{ paddingTop: isHome ? "4rem" : "0" }}> */}
-      <div className="pt-15">
+      {/* FIX 2: added 'flex-grow' 
+          This tells the routes container to expand and fill any empty vertical space, 
+          which pushes the Footer to the very bottom.
+      */}
+      <div className="pt-15 flex-grow">
         <Routes>
           {/* HOME */}
           <Route
@@ -81,7 +88,7 @@ const App = () => {
                 <About />
                 <Services />
                 <Products />
-                <Automation/>
+                <Automation />
                 <CoreValues />
                 <IndustriesSection />
                 <ClientTestimonial />

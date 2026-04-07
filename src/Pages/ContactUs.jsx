@@ -2,8 +2,6 @@
 
 
 
-
-
 import React, { useEffect, useState } from "react";
 import {
   FaMapMarkerAlt,
@@ -80,7 +78,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-sky-100 via-blue-400 to-indigo-400 min-h-screen pt-20 sm:pt-24 md:pt-28 pb-10 px-4 sm:px-6 md:px-10 lg:px-16">
+    <div className="bg-gradient-to-br from-sky-100 via-blue-400 to-indigo-400 min-h-screen pt-15 sm:pt-24 md:pt-28 pb-10 px-4 sm:px-6 md:px-10 lg:px-16">
 
       {/* Heading */}
       <div className="text-center mb-10 md:mb-14">
