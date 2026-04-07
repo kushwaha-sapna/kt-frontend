@@ -23,7 +23,7 @@ function Hero() {
   return (
     <section className="relative w-full h-[60vh] md:h-screen overflow-hidden bg-black">
       
-      {/* ✅ Fully Responsive Image Slider */}
+      {/* Fully Responsive Image Slider */}
       {images.map((img, index) => (
         <img
           key={index}
@@ -47,7 +47,7 @@ function Hero() {
       {/* Content */}
       <div className="relative h-full flex items-center z-10">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl text-white">
+          <div className="max-w-2xl text-white " >
 
             <p className="bg-white/90 text-[#c79b2c] px-4 py-2 rounded-full inline-flex items-center gap-2 font-bold text-xs md:text-sm uppercase tracking-wider">
               <FaStar className="text-xs" />
