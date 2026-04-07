@@ -2,24 +2,27 @@
 
 
 
+
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaMobileAlt, FaAndroid, FaApple, FaCheckCircle } from "react-icons/fa";
 
 const MobileApplication = () => {
   return (
-    <div className="flex flex-col min-h-[100vh] pt-10 md:pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white">
-     
+    <div className="flex flex-col min-h-screen pt-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 bg-gradient-to-b from-gray-50 to-white">
+      
       {/* Container */}
-      <div className="flex-1 max-w-6xl mx-auto">
+      <div className="flex-1 w-full max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-center">
           Mobile Application Development
         </h1>
 
         {/* Description */}
-        <p className="text-gray-600 max-w-3xl mx-auto text-center mb-10 md:mb-12">
+        <p className="text-gray-600 max-w-3xl mx-auto text-center mb-10 md:mb-12 text-sm sm:text-base">
           We build powerful, scalable, and user-friendly mobile applications
           that deliver seamless experiences across Android and iOS devices.
         </p>
@@ -63,11 +66,11 @@ const MobileApplication = () => {
         </div>
 
         {/* Extra Section */}
-        <div className="mt-12 md:mt-16 grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+        <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
 
           {/* Left Content */}
           <div>
-            <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
               Why Choose Our Mobile Solutions?
             </h2>
 
@@ -117,7 +120,7 @@ const MobileApplication = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-12 md:mt-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-center py-10 md:py-12 rounded-2xl shadow-lg">
+        <div className="mt-12 md:mt-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-center py-10 md:py-12 px-4 rounded-2xl shadow-lg">
           <h2 className="text-xl md:text-3xl font-bold mb-4">
             Take Your Business Mobile
           </h2>
@@ -139,9 +142,4 @@ const MobileApplication = () => {
   );
 };
 
-export default MobileApplication;   
-
-
-
-
-
+export default MobileApplication;
