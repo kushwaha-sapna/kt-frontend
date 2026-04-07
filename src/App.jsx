@@ -1,8 +1,3 @@
-
-
-
-
-
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -65,18 +60,11 @@ const App = () => {
   }, [location]);
 
   return (
-    /* FIX 1: added 'flex flex-col min-h-screen' 
-       This forces the entire app to be at least the height of the device screen.
-    */
-    <div className="flex flex-col min-h-screen">
+    <div>
       {isHome && <Marquee />}
       <Navbar isHome={isHome} />
 
-      {/* FIX 2: added 'flex-grow' 
-          This tells the routes container to expand and fill any empty vertical space, 
-          which pushes the Footer to the very bottom.
-      */}
-      <div className="pt-15 flex-grow">
+      <div className="pt-15">
         <Routes>
           {/* HOME */}
           <Route
@@ -132,7 +120,10 @@ const App = () => {
           <Route path="/ecommerce" element={<Ecommerce />} />
 
           {/* 404 */}
-          <Route path="*" element={<div className="pt-20">Page Not Found</div>} />
+          <Route
+            path="*"
+            element={<div className="pt-20">Page Not Found</div>}
+          />
         </Routes>
       </div>
 

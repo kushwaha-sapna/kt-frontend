@@ -22,11 +22,12 @@ const ERP = () => {
   }, []);
 
   return (
-    <div className="pt-24 px-6 md:px-20 bg-gradient-to-br from-blue-50 to-white pb-20">
+    <div className="pt-20 sm:pt-24 md:pt-28 px-4 sm:px-6 md:px-10 lg:px-20 pb-16 sm:pb-20 bg-gray-50">
 
-      {/* Top Heading */}
-      <div className="text-center mb-10">
-        <h1 className="text-5xl font-extrabold text-blue-900 tracking-wide">
+      {/* Header */}
+      <div className="text-center mb-10 md:mb-14">
+       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900">
+  
           ERP
         </h1>
       </div>

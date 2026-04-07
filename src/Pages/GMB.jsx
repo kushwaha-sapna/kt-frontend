@@ -39,13 +39,15 @@ const GMB = () => {
   ];
 
   return (
-    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+   
+      <div className="pt-20 sm:pt-24 md:pt-28 px-4 sm:px-6 md:px-10 lg:px-20 pb-16 sm:pb-20 bg-gray-50">
 
-      <div className="max-w-6xl mx-auto">
+      {/* Header */}
+      <div className="text-center mb-10 md:mb-14">
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900">
             Google My Business
           </h1>
 

@@ -10,7 +10,7 @@ const MobileApplication = () => {
       <div className="flex-1 w-full max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-center">
+        <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-center">
           Mobile Application Development
         </h1>
 

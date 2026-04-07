@@ -85,9 +85,9 @@ const clientTestimonials = [
 
 const Guidance = () => {
   return (
-    <div >
+   
       
-      
+      <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-900 text-black">
 
       {/* Attractive Background */}
       <section className="relative overflow-hidden py-20 px-6 md:px-12 bg-gradient-to-br from-slate-900 via-blue-800 to-cyan-800 ">
@@ -197,3 +197,11 @@ const Guidance = () => {
 };
 
 export default Guidance;
+
+
+
+
+
+
+
+

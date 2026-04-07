@@ -18,11 +18,11 @@ import {
 
 const Tally = () => {
   return (
-    <div className="pt-24 px-6 md:px-20 pb-20 bg-gray-50">
+   <div className="pt-20 sm:pt-24 md:pt-28 px-4 sm:px-6 md:px-10 lg:px-20 pb-16 sm:pb-20 bg-gray-50">
 
       {/* Header */}
-      <div className="text-center mb-14">
-        <h1 className="text-4xl font-bold text-blue-900">Tally</h1>
+      <div className="text-center mb-10 md:mb-14">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900">Tally</h1>
         <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
           Complete accounting and financial management solution to handle your business finances efficiently.
         </p>
