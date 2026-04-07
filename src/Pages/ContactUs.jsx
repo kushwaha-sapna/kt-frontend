@@ -27,12 +27,7 @@ const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState({ show: false, type: '', text: '' });
 
-<<<<<<< HEAD
-  // Backend API uses Vite proxy - no hardcoded URL visible
 const API_BASE = 'https://kt-technology-backend.onrender.com/api';
-=======
-  const API_BASE = 'https://kt-technology-backend.onrender.com/api';
->>>>>>> 45fb7b8bb1f1040cf4efe91de4ae41e695dd2d93
 
   useEffect(() => {
     window.scrollTo(0, 0);
