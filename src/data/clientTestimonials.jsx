@@ -1,26 +1,29 @@
+import client1 from "../assets/clients/client1.jpeg";
+import client2 from "../assets/clients/client2.jpeg";
 const clientTestimonials = [
   {
     id: 1,
-    name: "Rahul Sharma",
-    role: "Startup Founder",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    feedback: "This company transformed our business completely.",
+    name: "Mr. Vipin",
+    role: "Medical Business Owner",
+   
+      image: client1,
+    feedback: "KT-Technology transformed our business completely-their solution helped us scale faster and smarter.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Priya Verma",
-    role: "Marketing Head",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    feedback: "Amazing service and support. Highly recommended!",
+    name: "Shivam",
+    role: "E-commerce Website Owner",
+    image: client2,
+    feedback: "KT-Technology helped us scale our online store seamlessly-from design to performance ,everything improved.",
     rating: 4,
   },
   {
     id: 3,
-    name: "Aman Gupta",
-    role: "Tech Lead",
+    name: "Rishab",
+    role: "Entrepreneur",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
-    feedback: "UI/UX design is next level. Very clean work.",
+    feedback: "KT-Technology gave my business the boost it needed-their innovation solution made growth effortless.",
     rating: 5,
   },
 ];

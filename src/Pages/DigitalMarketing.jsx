@@ -1,90 +1,101 @@
-
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaClock, FaUsers } from "react-icons/fa";
+import {
+  FaBullhorn,
+  FaChartLine,
+  FaSearch,
+  FaShareAlt,
+  FaLaptopCode,
+  FaPenNib
+} from "react-icons/fa";
 
-const TemporaryStaffing = () => {
+const DigitalMarketing = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="pt-24 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    
+    <div className="flex flex-col min-h-screen pt-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 bg-gradient-to-b from-gray-50 to-white">
 
       <div className="max-w-6xl mx-auto">
 
         {/* HERO */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            IT Staffing Services
+            Digital Marketing Services
           </h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Comprehensive IT staffing solutions for your business including expert
-            database design, optimization, migration, and management services.
+            Grow your business online with powerful digital marketing strategies including SEO,
+            social media, paid ads, and content marketing that drive real results. We focus on
+            increasing visibility, generating leads, and maximizing your ROI through data-driven
+            marketing approaches.
           </p>
         </div>
 
-        {/* 🔹 SERVICES HEADING */}
+        {/* SERVICES HEADING */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800">
-            Our IT Staffing Services
+            Our Digital Marketing Services
           </h2>
           <p className="text-gray-500 mt-2">
-            Comprehensive database solutions for modern businesses
+            Complete online growth solutions for your brand with proven strategies and measurable results
           </p>
         </div>
 
         {/* SERVICES CARDS */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
 
-          {/* TEMPORARY */}
+          {/* SEO */}
           <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-            <FaClock className="text-cyan-600 text-4xl mb-4" />
+            <FaSearch className="text-cyan-600 text-4xl mb-4" />
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-              IT Staffing (Temporary)
+              SEO & Organic Growth
             </h3>
+
             <p className="text-gray-500 mb-4">
-              Short-term / contract based hiring
+              Improve your website ranking and attract high-quality organic traffic.
             </p>
 
             <p className="text-gray-600 mb-4">
-              Are you looking for temporary IT staffing solutions? We excel in
-              offering IT recruitment services for varied industries.
+              We implement advanced SEO techniques including keyword optimization, content strategy,
+              and technical improvements to boost your search engine rankings and increase visibility.
             </p>
 
             <ul className="text-gray-600 space-y-2">
-              <li>✔ Short-Term Project-Based Hiring</li>
-              <li>✔ Quick Deployment of IT Resources</li>
-              <li>✔ Flexible Contract Staffing Solutions</li>
-              <li>✔ Cost-Effective Workforce Management</li>
+              <li>✔ Keyword Research & Competitor Analysis</li>
+              <li>✔ On-Page & Off-Page SEO Optimization</li>
+              <li>✔ Technical SEO & Site Performance</li>
+              <li>✔ Organic Traffic & Ranking Growth</li>
+              <li>✔ Link Building & Authority Building</li>
             </ul>
           </div>
 
-          {/* PERMANENT */}
+          {/* SOCIAL MEDIA */}
           <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-            <FaUsers className="text-cyan-600 text-4xl mb-4" />
+            <FaShareAlt className="text-cyan-600 text-4xl mb-4" />
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-              IT Staffing (Permanent)
+              Social Media Marketing
             </h3>
+
             <p className="text-gray-500 mb-4">
-              Long-term hiring
+              Build a strong and engaging brand presence across all social platforms.
             </p>
 
             <p className="text-gray-600 mb-4">
-              Required IT professionals who can help you drive success in your
-              organization? We provide knowledgeable IT experts through an
-              end-to-end recruitment process.
+              We create high-quality content and run targeted campaigns to connect with your audience,
+              increase engagement, and grow your brand community.
             </p>
 
             <ul className="text-gray-600 space-y-2">
-              <li>✔ End-to-End Recruitment Process</li>
-              <li>✔ Skilled & Pre-Screened IT Professionals</li>
-              <li>✔ Culture & Role Fit Assessment</li>
-              <li>✔ Long-Term Talent Acquisition Strategy</li>
+              <li>✔ Content Creation & Strategy</li>
+              <li>✔ Paid Ads Campaign Management</li>
+              <li>✔ Audience Targeting & Analytics</li>
+              <li>✔ Engagement & Brand Awareness Growth</li>
+              <li>✔ Influencer & Trend Marketing</li>
             </ul>
           </div>
 
@@ -94,38 +105,54 @@ const TemporaryStaffing = () => {
         <div className="grid md:grid-cols-2 gap-10 mb-20">
 
           <div className="bg-gray-100 p-8 rounded-2xl">
+            <FaLaptopCode className="text-cyan-600 text-3xl mb-3" />
             <h3 className="text-xl font-semibold mb-3">
-              IT Staffing - Temporary
+              Performance Marketing
             </h3>
-            <p className="text-gray-600 mb-4">
-              Are you looking for temporary IT staffing solutions? We excel in offering IT recruitment services for varied industries.
-            </p>
             <p className="text-gray-600">
-              As a leading provider of IT Staffing Services, we create solutions by understanding the specific skills required and meeting your overall business standards.
+              Run high-converting ad campaigns across Google Ads, Meta Ads, and other platforms with
+              measurable ROI. Our data-driven approach ensures every rupee spent delivers maximum results.
             </p>
           </div>
 
           <div className="bg-gray-100 p-8 rounded-2xl">
+            <FaPenNib className="text-cyan-600 text-3xl mb-3" />
             <h3 className="text-xl font-semibold mb-3">
-              IT Staffing
+              Content Marketing
             </h3>
-            <p className="text-gray-600 mb-4">
-              We provide end-to-end IT staffing services tailored to your business needs.
-            </p>
             <p className="text-gray-600">
-              Our approach focuses on aligning the right talent with your business goals.
+              Create valuable and engaging content including blogs, videos, and graphics that build
+              trust, improve SEO rankings, and establish your brand authority in your industry.
             </p>
           </div>
 
         </div>
 
+        {/* EXTRA SECTION */}
+        <div className="text-center mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+            Why Choose Our Digital Marketing?
+          </h2>
+
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            We combine creativity, strategy, and analytics to deliver marketing solutions that
+            drive real business growth. From startups to established brands, we help you reach
+            the right audience at the right time.
+          </p>
+        </div>
+
         {/* CTA */}
         <div className="mt-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white text-center py-12 rounded-2xl shadow-lg">
+          
+          <FaBullhorn className="text-4xl mx-auto mb-4" />
+
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Build Your IT Team Today
+            Boost Your Online Presence Today
           </h2>
-          <p className="mb-6">
-            Get the right talent at the right time with our expert IT staffing solutions.
+
+          <p className="mb-6 max-w-2xl mx-auto">
+            Start growing your business with our expert digital marketing strategies.
+            Increase traffic, generate leads, and maximize your revenue with us.
           </p>
 
           <Link
@@ -141,4 +168,4 @@ const TemporaryStaffing = () => {
   );
 };
 
-export default TemporaryStaffing;
+export default DigitalMarketing;

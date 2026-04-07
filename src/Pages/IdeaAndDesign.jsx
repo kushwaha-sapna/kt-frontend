@@ -56,7 +56,7 @@ const IdeaAndDesign = () => {
   ];
 
   return (
-    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div className="pt-24 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
 
       <div className="max-w-6xl mx-auto">
 
@@ -146,26 +146,13 @@ const IdeaAndDesign = () => {
           </div>
         </div>
 
-        {/* STATS */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20 text-center">
-          {[
-            ["300+", "Projects Completed"],
-            ["98%", "Client Satisfaction"],
-            ["5+ Years", "Design Experience"],
-            ["24h", "Response Time"]
-          ].map((item, index) => (
-            <div key={index} className="bg-cyan-600 text-white p-6 rounded-xl">
-              <h3 className="text-2xl font-bold">{item[0]}</h3>
-              <p className="text-sm">{item[1]}</p>
-            </div>
-          ))}
-        </div>
+       
 
         {/* PROCESS */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center ">
             Our Design Process
-          </h2>
+          </h2> 
 
           <div className="grid md:grid-cols-4 gap-6 text-center">
             {[

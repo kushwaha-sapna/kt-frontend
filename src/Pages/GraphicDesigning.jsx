@@ -1,8 +1,3 @@
-
-
-
-
-
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -22,7 +17,8 @@ const GraphicDesigning = () => {
   }, []);
 
   return (
-    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-white min-h-screen">
+    
+    <div className="flex flex-col min-h-screen pt-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 bg-gradient-to-b from-gray-50 to-white">
 
       <div className="max-w-6xl mx-auto">
 
@@ -34,7 +30,8 @@ const GraphicDesigning = () => {
 
           <p className="text-gray-600 max-w-2xl mx-auto">
             Transform your brand with visually stunning and creative designs.
-            We craft unique graphics that capture attention and leave a lasting impression.
+            We craft unique graphics that capture attention, communicate your message clearly,
+            and leave a lasting impression on your audience across all digital and print platforms.
           </p>
         </div>
 
@@ -51,7 +48,8 @@ const GraphicDesigning = () => {
 
             <p className="mb-6">
               We design eye-catching visuals that communicate your brand message
-              effectively and creatively.
+              effectively and creatively. Our designs are built to engage users,
+              increase brand recall, and deliver impactful storytelling through visuals.
             </p>
 
             <Link
@@ -69,7 +67,8 @@ const GraphicDesigning = () => {
               <FaPalette className="text-pink-500 text-3xl mb-3" />
               <h3 className="text-lg font-semibold mb-2">Brand Identity</h3>
               <p className="text-gray-600">
-                Logos, color palettes, and brand assets that define your identity.
+                Complete brand identity design including logos, typography, color palettes,
+                and brand guidelines to create a strong and memorable brand presence.
               </p>
             </div>
 
@@ -77,7 +76,8 @@ const GraphicDesigning = () => {
               <FaPenNib className="text-purple-500 text-3xl mb-3" />
               <h3 className="text-lg font-semibold mb-2">UI/UX Design</h3>
               <p className="text-gray-600">
-                Modern and intuitive interface designs for web and mobile apps.
+                Modern, user-friendly interface designs for web and mobile applications
+                with a focus on usability, accessibility, and smooth user experience.
               </p>
             </div>
 
@@ -85,7 +85,8 @@ const GraphicDesigning = () => {
               <FaPaintBrush className="text-orange-400 text-3xl mb-3" />
               <h3 className="text-lg font-semibold mb-2">Marketing Creatives</h3>
               <p className="text-gray-600">
-                Social media posts, banners, and ads that boost engagement.
+                High-converting social media posts, banners, posters, and ad creatives
+                designed to boost engagement, clicks, and brand visibility.
               </p>
             </div>
 
@@ -99,29 +100,60 @@ const GraphicDesigning = () => {
             Why Choose Our Design Services?
           </h2>
 
+          <p className="text-gray-600 max-w-3xl mx-auto mb-10">
+            We focus on delivering designs that are not only visually appealing but also strategically
+            aligned with your business goals. Every design we create is crafted with creativity,
+            precision, and user psychology in mind.
+          </p>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             <div className="bg-white border p-6 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition flex flex-col items-center">
               <FaBullseye className="text-pink-500 text-2xl mb-2" />
               <p className="font-medium">Unique & Creative</p>
+              <p className="text-gray-500 text-sm text-center mt-2">
+                Custom designs tailored to your brand identity and audience.
+              </p>
             </div>
 
             <div className="bg-white border p-6 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition flex flex-col items-center">
               <FaBolt className="text-yellow-500 text-2xl mb-2" />
               <p className="font-medium">Fast Delivery</p>
+              <p className="text-gray-500 text-sm text-center mt-2">
+                Quick turnaround time without compromising quality.
+              </p>
             </div>
 
             <div className="bg-white border p-6 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition flex flex-col items-center">
               <FaMobileAlt className="text-blue-500 text-2xl mb-2" />
               <p className="font-medium">Modern Designs</p>
+              <p className="text-gray-500 text-sm text-center mt-2">
+                Trend-based, responsive, and visually appealing designs.
+              </p>
             </div>
 
             <div className="bg-white border p-6 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition flex flex-col items-center">
               <FaLightbulb className="text-purple-500 text-2xl mb-2" />
               <p className="font-medium">Client Focused</p>
+              <p className="text-gray-500 text-sm text-center mt-2">
+                We prioritize your vision and ensure satisfaction at every step.
+              </p>
             </div>
 
           </div>
+        </div>
+
+        {/* Extra Content Section */}
+        <div className="mt-20 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Our Design Philosophy
+          </h2>
+
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            We believe great design is a combination of creativity, strategy, and purpose.
+            Our goal is to create visuals that not only look beautiful but also drive engagement,
+            build trust, and convert visitors into customers.
+          </p>
         </div>
 
         {/* CTA */}
@@ -130,8 +162,9 @@ const GraphicDesigning = () => {
             Let’s Design Something Amazing
           </h2>
 
-          <p className="mb-6">
-            Bring your ideas to life with our creative graphic design solutions.
+          <p className="mb-6 max-w-2xl mx-auto">
+            Bring your ideas to life with our creative graphic design solutions that
+            elevate your brand and make it stand out in the market.
           </p>
 
           <Link

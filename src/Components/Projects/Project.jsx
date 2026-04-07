@@ -17,13 +17,17 @@ const projects = [
   },
   {
     id: 3,
-    desc: "Blog Platform",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    desc: "Restaurant Website Design",
+    image: "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=80",
   },
   {
     id: 4,
     desc: "Landing Page",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+
+     id: 5,
+    desc: "Estate Website",
+    image: "https://images.unsplash.com/photo-1627640268913-91cfd4675b65?q=80&w=1174&auto=format&fit=crop" 
   },
 ];
 
@@ -41,7 +45,7 @@ const Project = () => {
           loop={true}
           spaceBetween={15}
 
-          // ✅ Responsive Breakpoints
+          //  Responsive Breakpoints
           breakpoints={{
             0: {
               slidesPerView: 1, // mobile

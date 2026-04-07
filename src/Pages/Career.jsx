@@ -54,7 +54,10 @@ const Career = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-6 md:px-16">
+   
+   <div className="bg-indigo-100 pt-22">
+    
+
       
       {/* Header */}
       <div className="text-center mb-12">
@@ -114,23 +117,24 @@ const Career = () => {
           Explore exciting opportunities and become part of a team that values
           innovation, creativity, and growth.
         </p>
-        <a href="https://forms.gle/dummy-career-form" target="_blank" rel="noopener noreferrer" className="block bg-white text-blue-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition mt-4 w-fit mx-auto">
-          Apply Now - Google Form
-        </a>
+       
+
+
+        <Link
+  to="/contact-us"
+  className="inline-block bg-white text-blue-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition mt-4 w-fit mx-auto"
+>
+  Apply Now - Google Form
+</Link>
       </div>
 
       {/* Additional Google Form Section */}
       <div className="mt-16 p-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl text-center">
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">
-          Ready to Join Our Team?
+        <h3 className="text-xl font-semibold text-blue-800 mb-4">
+         “Grow, connect, and thrive with our family”
         </h3>
-        <p className="text-gray-600 mb-6 max-w-md mx-auto">
-          Submit your application through our Google Form. Our team will review and contact you soon.
-        </p>
-        <a href="https://forms.gle/dummy-career-form" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-          → Open Application Form
-        </a>
-      </div>
+        
+      </div> 
     </div>
   );
 };

@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -9,13 +6,16 @@ import {
   FaStar,
   FaCheckCircle,
   FaHeart,
-  FaChartLine
+  FaChartLine,
+  FaCommentDots,
+  FaThumbsUp,
+  FaUsers
 } from "react-icons/fa";
 
 const UGC = () => {
 
   return (
-    <div className="pt-30 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-white to-pink-50 min-h-screen">
+    <div className="pt-22 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-white to-pink-50 min-h-screen">
 
       <div className="max-w-6xl mx-auto">
 
@@ -26,7 +26,8 @@ const UGC = () => {
           </h1>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Build trust and boost engagement with authentic content created by real users and creators.
+            Build trust, authenticity, and stronger brand connections with real content created by real people.  
+            UGC helps your brand feel more human, relatable, and trustworthy.
           </p>
         </div>
 
@@ -39,7 +40,7 @@ const UGC = () => {
               Creator Collaborations
             </h3>
             <p className="text-gray-600">
-              Partner with influencers and creators to produce authentic and relatable content.
+              We collaborate with influencers, micro-creators, and niche audiences to produce authentic and high-converting content.
             </p>
           </div>
 
@@ -49,7 +50,7 @@ const UGC = () => {
               Short-form Videos
             </h3>
             <p className="text-gray-600">
-              Engaging reels, TikToks, and short videos that capture attention instantly.
+              Scroll-stopping reels, TikToks, and shorts designed to maximize engagement and brand visibility.
             </p>
           </div>
 
@@ -59,7 +60,7 @@ const UGC = () => {
               Product Reviews
             </h3>
             <p className="text-gray-600">
-              Real user experiences that build trust and influence purchasing decisions.
+              Genuine reviews and testimonials that build trust and influence buying decisions.
             </p>
           </div>
 
@@ -75,47 +76,101 @@ const UGC = () => {
             </h2>
 
             <p className="text-gray-600 mb-4">
-              People trust people. UGC creates authentic connections that traditional marketing cannot achieve.
+              UGC leverages real voices and real experiences. It creates emotional connection, builds trust, and drives higher conversions than traditional ads.
             </p>
 
             <ul className="space-y-3 text-gray-600">
+
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Builds trust & credibility
+                Builds trust & brand authenticity
               </li>
+
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Increases engagement
+                Increases engagement & social proof
               </li>
+
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Boosts conversions
+                Boosts conversions & sales
               </li>
+
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Cost-effective marketing
+                Cost-effective marketing strategy
               </li>
+
+              <li className="flex items-center gap-2">
+                <FaCheckCircle className="text-green-500" />
+                Improves brand loyalty & retention
+              </li>
+
             </ul>
           </div>
 
           {/* Right Social Cards */}
           <div className="grid grid-cols-2 gap-4">
+
             <div className="bg-pink-100 p-6 rounded-2xl text-center flex flex-col items-center gap-2">
               <FaHeart className="text-pink-500 text-2xl" />
               10K+ Likes
             </div>
+
             <div className="bg-purple-100 p-6 rounded-2xl text-center flex flex-col items-center gap-2">
               <FaVideo className="text-purple-500 text-2xl" />
               500+ Videos
             </div>
+
             <div className="bg-yellow-100 p-6 rounded-2xl text-center flex flex-col items-center gap-2">
               <FaStar className="text-yellow-500 text-2xl" />
               4.9 Rating
             </div>
+
             <div className="bg-blue-100 p-6 rounded-2xl text-center flex flex-col items-center gap-2">
               <FaChartLine className="text-blue-500 text-2xl" />
               High Reach
             </div>
+
+            <div className="bg-green-100 p-6 rounded-2xl text-center flex flex-col items-center gap-2">
+              <FaThumbsUp className="text-green-500 text-2xl" />
+              Trust Building
+            </div>
+
+            <div className="bg-indigo-100 p-6 rounded-2xl text-center flex flex-col items-center gap-2">
+              <FaUsers className="text-indigo-500 text-2xl" />
+              Audience Growth
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Extra Value Section */}
+        <div className="mt-20 grid md:grid-cols-3 gap-8 text-center">
+
+          <div className="p-6 bg-white rounded-2xl shadow-md">
+            <FaCommentDots className="text-pink-500 text-3xl mb-3 mx-auto" />
+            <h3 className="font-semibold">Authentic Voice</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Real users sharing real experiences that build credibility.
+            </p>
+          </div>
+
+          <div className="p-6 bg-white rounded-2xl shadow-md">
+            <FaUsers className="text-purple-500 text-3xl mb-3 mx-auto" />
+            <h3 className="font-semibold">Community Driven</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Turn your audience into powerful brand ambassadors.
+            </p>
+          </div>
+
+          <div className="p-6 bg-white rounded-2xl shadow-md">
+            <FaChartLine className="text-blue-500 text-3xl mb-3 mx-auto" />
+            <h3 className="font-semibold">Growth Focused</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Content designed to increase reach, engagement, and conversions.
+            </p>
           </div>
 
         </div>
@@ -126,7 +181,7 @@ const UGC = () => {
             Let Your Customers Speak for You
           </h2>
           <p className="mb-6">
-            Turn real experiences into powerful marketing content.
+            Turn real experiences into powerful marketing content that drives results.
           </p>
 
           <Link

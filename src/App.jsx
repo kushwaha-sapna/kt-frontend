@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Marquee from "./Components/Marquee/Marquee";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
+import Automation from "./Components/Automation/Automation";
 import Services from "./Components/Services/Services";
 import IndustriesSection from "./Components/IndustriesSection/IndustriesSection";
 import CoreValues from "./Components/CoreValues/CoreValues";
@@ -47,25 +48,30 @@ import NoSky from "./Pages/NoSky.jsx";
 import Tally from "./Pages/Tally.jsx";
 import BookingPortal from "./Pages/BookingPortal.jsx";
 import GMB from "./Pages/GMB.jsx";
+<<<<<<< HEAD
 import AdminLogin from "./Pages/AdminLogin.jsx";
 import AdminDashboard from "./Pages/AdminDashboard.jsx";
+=======
+import Ecommerce from "./Pages/Ecommerce.jsx";
+>>>>>>> 45fb7b8bb1f1040cf4efe91de4ae41e695dd2d93
 
 const App = () => {
   const location = useLocation();
-  const [isHome, setIsHome] = useState(location.pathname === '/');
+  const [isHome, setIsHome] = useState(location.pathname === "/");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setIsHome(location.pathname === '/');
+    setIsHome(location.pathname === "/");
   }, [location]);
 
   return (
     <div>
       {isHome && <Marquee />}
       <Navbar isHome={isHome} />
-      
-      <div style={{ paddingTop: isHome ? '4rem' : '0' }}>
+
+      <div className="pt-15">
         <Routes>
+          {/* HOME */}
           <Route
             path="/"
             element={
@@ -75,6 +81,7 @@ const App = () => {
                 <About />
                 <Services />
                 <Products />
+                <Automation />
                 <CoreValues />
                 <IndustriesSection />
                 <ClientTestimonial />
@@ -86,26 +93,28 @@ const App = () => {
             }
           />
 
-          <Route path="/website-development" element={<div className="pt-20"><WebsiteDevelopment /></div>} />
-          <Route path="/mobile-application" element={<div className="pt-20"><MobileApplication /></div>} />
-          <Route path="/game-application" element={<div className="pt-20"><GameApplication /></div>} />
-          <Route path="/ui-ux-design" element={<div className="pt-20"><UIUXDesign /></div>} />
-          <Route path="/digital-marketing" element={<div className="pt-20"><DigitalMarketing /></div>} />
-          <Route path="/graphic-designing" element={<div className="pt-20"><GraphicDesigning /></div>} />
-          <Route path="/ugc" element={<div className="pt-20"><UGC /></div>} />
-          <Route path="/cybersecurity" element={<div className="pt-20"><Cybersecurity /></div>} />
-          <Route path="/contact-us" element={<div className="pt-20"><ContactUs /></div>} />
-          <Route path="/career" element={<div className="pt-20"><Career /></div>} />
-          <Route path="/about-us" element={<div className="pt-20"><AboutUs /></div>} />
-          <Route path="/temporary-staffing" element={<div className="pt-20"><TemporaryStaffing /></div>} />
-          <Route path="/permanent-staffing" element={<div className="pt-20"><PermanentStaffing /></div>} />
-          <Route path="/design" element={<div className="pt-20"><IdeaAndDesign /></div>} />
-          <Route path="/security" element={<div className="pt-20"><Security /></div>} />
-          <Route path="/privacy-policy" element={<div className="pt-20"><PrivacyPolicy /></div>} />
-          <Route path="/terms-and-condition" element={<div className="pt-20"><TermsAndCondition /></div>} />
-          <Route path="/support" element={<div className="pt-20"><Support /></div>} />
-          <Route path="/guidance" element={<div className="pt-20"><Guidance /></div>} />
+          {/* PAGES */}
+          <Route path="/website-development" element={<WebsiteDevelopment />} />
+          <Route path="/mobile-application" element={<MobileApplication />} />
+          <Route path="/game-application" element={<GameApplication />} />
+          <Route path="/ui-ux-design" element={<UIUXDesign />} />
+          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/graphic-designing" element={<GraphicDesigning />} />
+          <Route path="/ugc" element={<UGC />} />
+          <Route path="/cybersecurity" element={<Cybersecurity />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/temporary-staffing" element={<TemporaryStaffing />} />
+          <Route path="/permanent-staffing" element={<PermanentStaffing />} />
+          <Route path="/design" element={<IdeaAndDesign />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-condition" element={<TermsAndCondition />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/guidance" element={<Guidance />} />
 
+<<<<<<< HEAD
           <Route path="/erp" element={<div className="pt-20"><ERP /></div>} />
           <Route path="/crm" element={<div className="pt-20"><CRM /></div>} />
           <Route path="/hrms" element={<div className="pt-20"><HRMS /></div>} />
@@ -120,6 +129,23 @@ const App = () => {
 
           <Route path="*" element={<div className="pt-20">Page Not Found</div>} />
 
+=======
+          <Route path="/erp" element={<ERP />} />
+          <Route path="/crm" element={<CRM />} />
+          <Route path="/hrms" element={<HRMS />} />
+          <Route path="/ts-plus" element={<TSPlus />} />
+          <Route path="/no-sky" element={<NoSky />} />
+          <Route path="/tally" element={<Tally />} />
+          <Route path="/booking-portal" element={<BookingPortal />} />
+          <Route path="/gmb" element={<GMB />} />
+          <Route path="/ecommerce" element={<Ecommerce />} />
+
+          {/* 404 */}
+          <Route
+            path="*"
+            element={<div className="pt-20">Page Not Found</div>}
+          />
+>>>>>>> 45fb7b8bb1f1040cf4efe91de4ae41e695dd2d93
         </Routes>
       </div>
 
@@ -130,4 +156,3 @@ const App = () => {
 };
 
 export default App;
-

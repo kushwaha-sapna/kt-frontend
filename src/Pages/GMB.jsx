@@ -1,44 +1,18 @@
-// import React from "react";
-
-// const GMB = () => {
-//   return (
-//     <div className="pt-24 px-6 md:px-20 pb-16">
-
-//       <div className="text-center mb-12">
-//         <h1 className="text-4xl font-bold">Google My Business</h1>
-//         <p className="text-gray-600 mt-3">
-//           Improve your local presence and attract more customers.
-//         </p>
-//       </div>
-
-//       <div className="grid md:grid-cols-3 gap-6">
-//         {["Visibility","Reviews","Insights"].map((t,i)=>(
-//           <div key={i} className="bg-white p-6 rounded-xl shadow">
-//             <h3 className="text-blue-600 font-semibold">{t}</h3>
-//             <p className="text-sm text-gray-500 mt-2">
-//               Grow your business with local SEO tools.
-//             </p>
-//           </div>
-//         ))}
-//       </div>
-
-//     </div>
-//   );
-// };
-
-// export default GMB;
-
-
-
-
-
 
 
 
 
 
 import React, { useEffect } from "react";
-import { FaMapMarkerAlt, FaStar, FaChartLine } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaStar,
+  FaChartLine,
+  FaSearchLocation,
+  FaUsers,
+  FaBullhorn,
+  FaCheckCircle
+} from "react-icons/fa";
 
 const GMB = () => {
 
@@ -65,13 +39,15 @@ const GMB = () => {
   ];
 
   return (
-    <div className="pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+   
+      <div className="pt-20 sm:pt-24 md:pt-28 px-4 sm:px-6 md:px-10 lg:px-20 pb-16 sm:pb-20 bg-gray-50">
 
-      <div className="max-w-6xl mx-auto">
+      {/* Header */}
+      <div className="text-center mb-10 md:mb-14">
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900">
             Google My Business
           </h1>
 
@@ -81,7 +57,7 @@ const GMB = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map((item, i) => (
             <div
               key={i}
@@ -100,32 +76,93 @@ const GMB = () => {
           ))}
         </div>
 
-        {/* Extra Section (to match other pages 🔥) */}
+        {/* About Section */}
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+            What is Google My Business?
+          </h2>
+          <p className="text-gray-600">
+            Google My Business (GMB) is a powerful tool that helps your business appear in local search results and Google Maps.
+            It allows you to showcase your services, connect with customers, and build trust through reviews and ratings.
+          </p>
+        </div>
+
+        {/* Advanced Features */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-center mb-10 text-gray-900">
+            Key Features
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: <FaSearchLocation />, title: "Local SEO Optimization" },
+              { icon: <FaUsers />, title: "Customer Engagement" },
+              { icon: <FaBullhorn />, title: "Business Promotion" }
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition"
+              >
+                <div className="text-blue-600 text-2xl mb-3">{item.icon}</div>
+                <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                <p className="text-sm text-gray-500 mt-2">
+                  Optimize your presence and reach more local customers effectively.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Benefits */}
+        <div className="text-center mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900">
+            Benefits
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-6">
+            {[
+              "Increase local visibility",
+              "Build customer trust",
+              "Get more leads",
+              "Improve SEO ranking",
+              "Grow your business"
+            ].map((text, i) => (
+              <div
+                key={i}
+                className="bg-white px-5 py-2 rounded-full shadow flex items-center gap-2"
+              >
+                <FaCheckCircle className="text-blue-600" />
+                <span className="text-gray-600 text-sm">{text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Why Choose Us */}
         <div className="mt-16 grid md:grid-cols-2 gap-10 items-center">
 
           {/* Left */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Why GMB Matters?
+              Why Choose Our GMB Services?
             </h2>
 
-            <p className="text-gray-600 mb-4">
-              A well-optimized Google Business profile helps customers find you easily,
-              trust your brand, and engage with your services.
-            </p>
-
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-3 text-gray-600">
               <li className="flex items-center gap-2">
-                <FaMapMarkerAlt className="text-blue-500 text-sm" />
-                Higher local search rankings
+                <FaCheckCircle className="text-blue-600" />
+                Profile optimization by experts
               </li>
               <li className="flex items-center gap-2">
-                <FaStar className="text-yellow-500 text-sm" />
-                Better customer trust & reviews
+                <FaCheckCircle className="text-blue-600" />
+                Better ranking on Google Maps
               </li>
               <li className="flex items-center gap-2">
-                <FaChartLine className="text-green-500 text-sm" />
-                Data-driven business insights
+                <FaCheckCircle className="text-blue-600" />
+                Review management support
+              </li>
+              <li className="flex items-center gap-2">
+                <FaCheckCircle className="text-blue-600" />
+                Continuous performance tracking
               </li>
             </ul>
           </div>
@@ -148,4 +185,8 @@ const GMB = () => {
   );
 };
 
-export default GMB;
+ export default GMB;
+
+
+
+

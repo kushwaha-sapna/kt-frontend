@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import {
   FaBoxes,
@@ -7,135 +6,152 @@ import {
   FaCloud,
   FaUsers,
   FaShieldAlt,
-  FaCheckCircle, // Tick icon
+  FaTasks,
+  FaMoneyCheckAlt,
+  FaDatabase,
+  FaCheckCircle,
+  FaSyncAlt,
+  FaRocket,
+  FaLock
 } from "react-icons/fa";
 
 const ERP = () => {
 
-  // Scroll to top
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="pt-24 px-6 md:px-20 bg-gray-50 pb-16">
+    <div className="pt-20 sm:pt-24 md:pt-28 px-4 sm:px-6 md:px-10 lg:px-20 pb-16 sm:pb-20 bg-gray-50">
 
-      {/* Hero */}
-      <div className="text-center mb-14">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          ERP Solution
+      {/* Header */}
+      <div className="text-center mb-10 md:mb-14">
+       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900">
+  
+          ERP
         </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Transform your business with an integrated ERP system that connects
-          finance, operations, HR, and inventory into one powerful platform.
+      </div>
+
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          Transform Your Business with Smart ERP Solutions
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto">
+          Manage your inventory, finance, HR, and operations — all in one unified platform.
+          Our ERP system helps you automate processes, improve efficiency, and scale your business.
+        </p>
+        <p className="mt-4 text-blue-600 font-semibold">
+          Integrated. Intelligent. Efficient.
         </p>
       </div>
 
-      {/* Features */}
-      <div className="grid md:grid-cols-3 gap-6 mb-16">
-        {[
-          {
-            icon: <FaBoxes />,
-            title: "Inventory Management",
-            desc: "Track stock levels, manage warehouses, and reduce losses with real-time updates.",
-          },
-          {
-            icon: <FaChartLine />,
-            title: "Financial Control",
-            desc: "Automate accounting, billing, and generate accurate financial reports.",
-          },
-          {
-            icon: <FaCogs />,
-            title: "Business Automation",
-            desc: "Eliminate repetitive tasks and improve workflow efficiency.",
-          },
-        ].map((item, i) => (
-          <div
-            key={i}
-            className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition text-center"
-          >
-            <div className="text-3xl text-blue-600 mb-3 flex justify-center">
-              {item.icon}
-            </div>
-            <h3 className="text-lg font-semibold text-blue-600 mb-2">
-              {item.title}
-            </h3>
-            <p className="text-gray-500 text-sm">
-              {item.desc}
-            </p>
-          </div>
-        ))}
+      {/* About ERP */}
+      <div className="mb-20 max-w-4xl mx-auto text-center bg-white p-8 rounded-2xl shadow-md">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">
+          About ERP
+        </h2>
+        <h3 className="text-xl font-semibold mb-3">
+          What is Our ERP System?
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Our ERP (Enterprise Resource Planning) system connects all your business processes into a single platform.
+          It helps you manage resources, track operations, and make smarter decisions.
+        </p>
+
+        <p className="font-semibold">It is perfect for:</p>
+        <ul className="text-gray-600 mt-2 space-y-1">
+          <li>• Large enterprises</li>
+          <li>• Manufacturing units</li>
+          <li>• Retail businesses</li>
+          <li>• Growing organizations</li>
+        </ul>
       </div>
 
-      {/* Why Choose ERP */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-bold mb-6 text-center">
-          Why Choose Our ERP?
+      {/* Key Features */}
+      <div className="mb-20">
+        <h2 className="text-2xl font-bold text-center mb-10 text-blue-900">
+          Key Features
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: <FaChartLine />, text: "Real-time data insights" },
-            { icon: <FaCogs />, text: "Scalable for growing businesses" },
-            { icon: <FaUsers />, text: "User-friendly interface" },
-            { icon: <FaCloud />, text: "Secure cloud-based system" },
-            { icon: <FaBoxes />, text: "Customizable modules" },
-            { icon: <FaShieldAlt />, text: "24/7 support" },
+            { icon: <FaBoxes />, title: "Inventory Management" },
+            { icon: <FaChartLine />, title: "Financial Tracking" },
+            { icon: <FaCogs />, title: "Process Automation" },
+            { icon: <FaUsers />, title: "HR Management" },
+            { icon: <FaTasks />, title: "Workflow Management" },
+            { icon: <FaMoneyCheckAlt />, title: "Accounting System" },
+            { icon: <FaDatabase />, title: "Centralized Data" },
+            { icon: <FaCloud />, title: "Cloud Based Access" }
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-blue-50 p-5 rounded-lg text-center text-sm font-medium"
+              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 border"
             >
-              <div className="text-2xl text-blue-600 mb-2 flex justify-center">
+              <div className="text-blue-600 text-3xl mb-4">
                 {item.icon}
               </div>
-              {item.text}
+              <h3 className="text-lg font-semibold text-gray-800">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-500 mt-2">
+                Smart and efficient module to manage business operations easily.
+              </p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Benefits Section */}
-      <div className="mb-16 grid md:grid-cols-2 gap-10 items-center">
-        
-        <div>
-          <h2 className="text-2xl font-bold mb-4">
-            Boost Efficiency & Productivity
-          </h2>
-          <p className="text-gray-600 mb-4">
-            Our ERP helps businesses streamline operations, reduce manual work,
-            and improve overall productivity with smart automation tools.
-          </p>
-          <p className="text-gray-600">
-            With centralized data and intelligent reporting, decision-making
-            becomes faster and more accurate.
-          </p>
-        </div>
+      {/* Benefits */}
+      <div className="mb-20 text-center">
+        <h2 className="text-2xl font-bold mb-8 text-blue-900">
+          Benefits
+        </h2>
 
-        <div className="bg-white p-6 rounded-xl shadow">
-          <ul className="space-y-4 text-gray-600 text-sm">
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500" />
-              Centralized Data Management
-            </li>
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500" />
-              Improved Team Collaboration
-            </li>
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500" />
-              Faster Decision Making
-            </li>
-            <li className="flex items-center gap-2">
-              <FaCheckCircle className="text-green-500" />
-              Reduced Operational Costs
-            </li>
-          </ul>
+        <div className="flex flex-wrap justify-center gap-6">
+          <div className="bg-white px-6 py-3 rounded-full shadow flex items-center gap-2">
+            <FaRocket className="text-blue-600" /> Boost productivity
+          </div>
+          <div className="bg-white px-6 py-3 rounded-full shadow flex items-center gap-2">
+            <FaSyncAlt className="text-blue-600" /> Real-time updates
+          </div>
+          <div className="bg-white px-6 py-3 rounded-full shadow flex items-center gap-2">
+            <FaChartLine className="text-blue-600" /> Better insights
+          </div>
+          <div className="bg-white px-6 py-3 rounded-full shadow flex items-center gap-2">
+            <FaDatabase className="text-blue-600" /> Centralized control
+          </div>
+          <div className="bg-white px-6 py-3 rounded-full shadow flex items-center gap-2">
+            <FaLock className="text-blue-600" /> Secure system
+          </div>
         </div>
-
       </div>
 
-     
+      {/* Why Choose Us */}
+      <div className="text-center max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+        <h2 className="text-2xl font-bold mb-6 text-blue-900">
+          Why Choose Us?
+        </h2>
+        <ul className="text-gray-600 space-y-3">
+          <li className="flex justify-center items-center gap-2">
+            <FaCheckCircle className="text-blue-600" /> Easy-to-use interface
+          </li>
+          <li className="flex justify-center items-center gap-2">
+            <FaCheckCircle className="text-blue-600" /> Fully customizable system
+          </li>
+          <li className="flex justify-center items-center gap-2">
+            <FaCheckCircle className="text-blue-600" /> Scalable architecture
+          </li>
+          <li className="flex justify-center items-center gap-2">
+            <FaCheckCircle className="text-blue-600" /> Dedicated support
+          </li>
+          <li className="flex justify-center items-center gap-2">
+            <FaCheckCircle className="text-blue-600" /> Fast & reliable performance
+          </li>
+        </ul>
+      </div>
+
     </div>
   );
 };
