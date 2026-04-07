@@ -4,7 +4,7 @@ import { FaMobileAlt, FaAndroid, FaApple, FaCheckCircle } from "react-icons/fa";
 
 const MobileApplication = () => {
   return (
-    <div className="flex flex-col min-h-screen pt-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 bg-gradient-to-b from-gray-50 to-white">
+    <div className="flex flex-col min-h-screen pt-24 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 bg-gradient-to-b from-gray-50 to-white">
       
       {/* Container */}
       <div className="flex-1 w-full max-w-7xl mx-auto">

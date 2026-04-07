@@ -16,7 +16,7 @@ const Cybersecurity = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-[100vh] pt-6 md:pt-10 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white">
+    <div className="flex flex-col min-h-[100vh] pt-6 md:pt-24 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-gray-50 to-white">
 
       {/* Main Content */}
       <div className="flex-1">

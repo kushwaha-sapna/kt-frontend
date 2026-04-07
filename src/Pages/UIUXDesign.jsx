@@ -14,7 +14,7 @@ import { FaPenNib, FaUsers, FaLayerGroup, FaCheckCircle } from "react-icons/fa";
 
 const UIUXDesign = () => {
   return (
-    <div className="flex flex-col min-h-[100vh] pt-16 md:pt-20 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-white to-gray-100">
+    <div className="flex flex-col min-h-[100vh] pt-24 md:pt-20 px-4 md:px-16 lg:px-28 bg-gradient-to-b from-white to-gray-100">
 
       <div className="flex-1 max-w-6xl mx-auto">
 
