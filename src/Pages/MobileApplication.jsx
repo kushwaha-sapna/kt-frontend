@@ -1,11 +1,7 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
-import { 
-  FaMobileAlt, 
-  FaAndroid, 
-  FaApple, 
-  FaCheckCircle 
-} from "react-icons/fa";
+import { FaMobileAlt, FaAndroid, FaApple, FaCheckCircle } from "react-icons/fa";
 
 const MobileApplication = () => {
   return (
@@ -24,13 +20,13 @@ const MobileApplication = () => {
           We build powerful, scalable, and user-friendly mobile applications
           that deliver seamless experiences across Android and iOS devices.
           Our solutions help businesses grow, improve engagement, and achieve
-          digital transformation with modern technologies.
+          digital transformation with modern technologies. From startups to
+          enterprises, we create apps that are secure, fast, and future-ready.
         </p>
 
         {/* Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-          {/* Card 1 */}
           <div className="bg-white p-5 md:p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
             <FaMobileAlt className="text-cyan-600 text-3xl md:text-4xl mb-3 md:mb-4 mx-auto" />
             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
@@ -39,10 +35,10 @@ const MobileApplication = () => {
             <p className="text-gray-600 text-sm md:text-base">
               Tailored mobile applications designed to meet your business goals and user needs.
               We focus on intuitive UI, smooth performance, secure backend, and scalable architecture.
+              Our solutions are built to grow with your business.
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white p-5 md:p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
             <FaAndroid className="text-green-600 text-3xl md:text-4xl mb-3 md:mb-4 mx-auto" />
             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
@@ -50,11 +46,11 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               High-performance Android applications with smooth UI and optimized functionality.
-              Built using latest tools like React Native & Kotlin for speed and reliability.
+              Built using latest technologies like Kotlin, Java, and modern frameworks to ensure
+              speed, reliability, and scalability.
             </p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white p-5 md:p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
             <FaApple className="text-gray-800 text-3xl md:text-4xl mb-3 md:mb-4 mx-auto" />
             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 md:mb-3">
@@ -62,7 +58,8 @@ const MobileApplication = () => {
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
               Elegant and secure iOS applications built for performance and user experience.
-              Designed with Apple guidelines to deliver premium and smooth mobile experience.
+              Designed with Apple’s guidelines to deliver premium quality apps with smooth
+              navigation and high-end performance.
             </p>
           </div>
 
@@ -81,6 +78,7 @@ const MobileApplication = () => {
               We deliver mobile apps that are fast, secure, and designed to scale
               with your business growth. Our expert developers ensure high-quality
               performance, modern UI/UX, and strong security implementation.
+              We also provide long-term support and maintenance.
             </p>
 
             <ul className="text-gray-600 space-y-2 text-sm md:text-base">
@@ -119,7 +117,8 @@ const MobileApplication = () => {
 
             <p className="text-gray-600 mb-5 md:mb-6 text-sm md:text-base">
               Turn your ideas into reality with our expert mobile app development services.
-              We help startups, businesses, and enterprises build scalable mobile solutions.
+              Whether it’s a startup idea, business app, or enterprise solution, we deliver
+              high-quality mobile applications that drive results and user engagement.
             </p>
 
             <Link
@@ -140,7 +139,7 @@ const MobileApplication = () => {
 
           <p className="mb-6 text-sm md:text-base">
             Reach more users, increase engagement, and grow your revenue with our mobile solutions.
-            We deliver high-quality apps tailored to your business needs.
+            We deliver high-quality apps tailored to your business needs with modern design and strong performance.
           </p>
 
           <Link
