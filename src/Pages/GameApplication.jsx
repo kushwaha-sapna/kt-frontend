@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -28,7 +22,9 @@ const GameApplication = () => {
         {/* Description */}
         <p className="text-gray-600 max-w-3xl mx-auto text-center mb-10 md:mb-12">
           We create engaging, high-performance game applications designed to deliver
-          immersive experiences across mobile, web, and next-gen platforms.
+          immersive experiences across mobile, web, and next-gen platforms. Our focus
+          is on combining creativity, storytelling, and cutting-edge technology to
+          build games that users love and remember.
         </p>
 
         {/* Cards */}
@@ -40,7 +36,8 @@ const GameApplication = () => {
               Game Design
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
-              Creative and interactive game design with engaging UI/UX and captivating gameplay.
+              Creative and interactive game design with engaging UI/UX, realistic mechanics,
+              and captivating gameplay that keeps players engaged for longer sessions.
             </p>
           </div>
 
@@ -50,7 +47,8 @@ const GameApplication = () => {
               Mobile Games
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
-              High-performance Android and iOS games optimized for smooth and responsive gameplay.
+              High-performance Android and iOS games optimized for smooth animations,
+              responsive controls, and seamless gameplay across all mobile devices.
             </p>
           </div>
 
@@ -60,7 +58,8 @@ const GameApplication = () => {
               AR/VR Games
             </h3>
             <p className="text-gray-600 text-sm md:text-base">
-              Immersive augmented and virtual reality gaming experiences using cutting-edge technology.
+              Immersive augmented and virtual reality gaming experiences using
+              cutting-edge technology to deliver realistic and interactive environments.
             </p>
           </div>
 
@@ -77,25 +76,30 @@ const GameApplication = () => {
 
             <p className="text-gray-600 mb-4 text-sm md:text-base">
               Our team combines creativity with advanced technology to build games
-              that stand out in today’s competitive market.
+              that stand out in today’s competitive market. We focus on performance,
+              scalability, and user engagement to ensure long-term success.
             </p>
 
             <ul className="space-y-2 md:space-y-3 text-gray-600 text-sm md:text-base">
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Smooth performance & optimization
+                Smooth performance & advanced optimization techniques
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Cross-platform compatibility
+                Cross-platform compatibility (Mobile, Web & Desktop)
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Engaging user experience
+                Highly engaging UI/UX with addictive gameplay loops
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Scalable and future-ready solutions
+                Scalable architecture for future updates & expansions
+              </li>
+              <li className="flex items-center gap-2">
+                <FaCheckCircle className="text-green-500" />
+                Multiplayer & real-time interaction capabilities
               </li>
             </ul>
           </div>
@@ -107,7 +111,8 @@ const GameApplication = () => {
             </h3>
 
             <p className="text-gray-600 mb-5 md:mb-6 text-sm md:text-base">
-              Let’s turn your game idea into reality with our expert development team.
+              Whether you have a concept, prototype, or a complete idea — we help you
+              transform it into a fully functional, market-ready gaming application.
             </p>
 
             <Link
@@ -126,8 +131,10 @@ const GameApplication = () => {
             Let’s Build the Next Big Game
           </h2>
 
-          <p className="mb-6 text-sm md:text-base">
-            Partner with us to create innovative and engaging gaming experiences.
+          <p className="mb-6 text-sm md:text-base max-w-2xl mx-auto">
+            Partner with us to create innovative and engaging gaming experiences
+            that stand out in the competitive gaming industry and captivate users
+            worldwide.
           </p>
 
           <Link

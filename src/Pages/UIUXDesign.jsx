@@ -2,6 +2,12 @@
 
 
 
+
+
+
+
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaPenNib, FaUsers, FaLayerGroup, FaCheckCircle } from "react-icons/fa";
@@ -20,7 +26,9 @@ const UIUXDesign = () => {
 
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
             We design intuitive, user-friendly, and visually stunning interfaces
-            that deliver seamless digital experiences.
+            that deliver seamless digital experiences. Our goal is to create
+            designs that not only look beautiful but also solve real user problems
+            and improve engagement.
           </p>
         </div>
 
@@ -31,7 +39,9 @@ const UIUXDesign = () => {
             <FaPenNib className="text-indigo-500 text-3xl mb-4" />
             <h3 className="text-lg font-semibold mb-2">UI Design</h3>
             <p className="text-gray-600 text-sm md:text-base">
-              Clean and modern interfaces for better usability.
+              Clean, modern, and visually appealing interfaces crafted with
+              attention to typography, colors, spacing, and accessibility to
+              enhance user interaction.
             </p>
           </div>
 
@@ -39,7 +49,8 @@ const UIUXDesign = () => {
             <FaUsers className="text-pink-500 text-3xl mb-4" />
             <h3 className="text-lg font-semibold mb-2">User Experience</h3>
             <p className="text-gray-600 text-sm md:text-base">
-              UX strategies focused on engagement and satisfaction.
+              UX strategies focused on deep user understanding, journey mapping,
+              and usability optimization to increase engagement and satisfaction.
             </p>
           </div>
 
@@ -47,7 +58,8 @@ const UIUXDesign = () => {
             <FaLayerGroup className="text-purple-500 text-3xl mb-4" />
             <h3 className="text-lg font-semibold mb-2">Prototyping</h3>
             <p className="text-gray-600 text-sm md:text-base">
-              Test ideas before development with prototypes.
+              Interactive prototypes that help visualize concepts, test usability,
+              and validate ideas before moving into full-scale development.
             </p>
           </div>
 
@@ -62,25 +74,31 @@ const UIUXDesign = () => {
             </h2>
 
             <p className="text-gray-600 mb-4 text-sm md:text-base">
-              We follow a user-centered design approach for best results.
+              We follow a user-centered design approach focused on research,
+              creativity, and continuous improvement to ensure the best possible
+              outcomes for your product.
             </p>
 
             <ul className="space-y-3 text-gray-600 text-sm md:text-base">
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Research & Analysis
+                Deep Research & Market Analysis
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Wireframing & Prototyping
+                Wireframing & Low-Fidelity Design
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                UI Design & Testing
+                High-Fidelity UI Design & Prototyping
               </li>
               <li className="flex items-center gap-2">
                 <FaCheckCircle className="text-green-500" />
-                Continuous Improvement
+                User Testing & Continuous Iteration
+              </li>
+              <li className="flex items-center gap-2">
+                <FaCheckCircle className="text-green-500" />
+                Final Optimization & Handoff
               </li>
             </ul>
           </div>
@@ -91,8 +109,26 @@ const UIUXDesign = () => {
             <div className="bg-gray-200 h-3 w-3/4 rounded mb-2"></div>
             <div className="bg-gray-200 h-3 w-1/2 rounded mb-2"></div>
             <div className="bg-gray-200 h-3 w-2/3 rounded"></div>
+            <div className="mt-4 text-sm text-gray-500">
+              We design real-world layouts focusing on clarity, usability, and
+              smooth user journeys across all devices.
+            </div>
           </div>
 
+        </div>
+
+        {/* Extra Content Section */}
+        <div className="mt-12 md:mt-20 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            Why Choose Our UI/UX Design?
+          </h2>
+
+          <p className="text-gray-600 max-w-3xl mx-auto text-sm md:text-base">
+            We combine creativity with strategy to deliver designs that are not
+            only visually stunning but also highly functional. Our designs focus
+            on user psychology, conversion optimization, and modern design trends
+            to ensure your product stands out in the market.
+          </p>
         </div>
 
         {/* CTA */}
@@ -103,7 +139,8 @@ const UIUXDesign = () => {
           </h2>
 
           <p className="mb-6 text-sm md:text-base">
-            Let’s craft intuitive and engaging designs for your product.
+            Let’s craft intuitive, modern, and engaging designs that help your
+            product grow and succeed in the digital world.
           </p>
 
           <Link

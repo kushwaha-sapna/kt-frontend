@@ -27,7 +27,9 @@ const DigitalMarketing = () => {
           </h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Grow your business online with powerful digital marketing strategies including SEO,
-            social media, paid ads, and content marketing that drive real results.
+            social media, paid ads, and content marketing that drive real results. We focus on
+            increasing visibility, generating leads, and maximizing your ROI through data-driven
+            marketing approaches.
           </p>
         </div>
 
@@ -37,7 +39,7 @@ const DigitalMarketing = () => {
             Our Digital Marketing Services
           </h2>
           <p className="text-gray-500 mt-2">
-            Complete online growth solutions for your brand
+            Complete online growth solutions for your brand with proven strategies and measurable results
           </p>
         </div>
 
@@ -53,18 +55,20 @@ const DigitalMarketing = () => {
             </h3>
 
             <p className="text-gray-500 mb-4">
-              Improve your website ranking and attract organic traffic.
+              Improve your website ranking and attract high-quality organic traffic.
             </p>
 
             <p className="text-gray-600 mb-4">
-              We optimize your website with advanced SEO strategies to increase visibility on search engines.
+              We implement advanced SEO techniques including keyword optimization, content strategy,
+              and technical improvements to boost your search engine rankings and increase visibility.
             </p>
 
             <ul className="text-gray-600 space-y-2">
-              <li>✔ Keyword Research & Optimization</li>
-              <li>✔ On-Page & Off-Page SEO</li>
-              <li>✔ Technical SEO</li>
-              <li>✔ Traffic Growth</li>
+              <li>✔ Keyword Research & Competitor Analysis</li>
+              <li>✔ On-Page & Off-Page SEO Optimization</li>
+              <li>✔ Technical SEO & Site Performance</li>
+              <li>✔ Organic Traffic & Ranking Growth</li>
+              <li>✔ Link Building & Authority Building</li>
             </ul>
           </div>
 
@@ -77,18 +81,20 @@ const DigitalMarketing = () => {
             </h3>
 
             <p className="text-gray-500 mb-4">
-              Build your brand presence on social platforms.
+              Build a strong and engaging brand presence across all social platforms.
             </p>
 
             <p className="text-gray-600 mb-4">
-              We create engaging content and run targeted campaigns on social media platforms.
+              We create high-quality content and run targeted campaigns to connect with your audience,
+              increase engagement, and grow your brand community.
             </p>
 
             <ul className="text-gray-600 space-y-2">
-              <li>✔ Content Creation</li>
-              <li>✔ Paid Ads Campaigns</li>
-              <li>✔ Audience Targeting</li>
-              <li>✔ Engagement Growth</li>
+              <li>✔ Content Creation & Strategy</li>
+              <li>✔ Paid Ads Campaign Management</li>
+              <li>✔ Audience Targeting & Analytics</li>
+              <li>✔ Engagement & Brand Awareness Growth</li>
+              <li>✔ Influencer & Trend Marketing</li>
             </ul>
           </div>
 
@@ -103,7 +109,8 @@ const DigitalMarketing = () => {
               Performance Marketing
             </h3>
             <p className="text-gray-600">
-              Run high-converting ad campaigns with measurable ROI using data-driven strategies.
+              Run high-converting ad campaigns across Google Ads, Meta Ads, and other platforms with
+              measurable ROI. Our data-driven approach ensures every rupee spent delivers maximum results.
             </p>
           </div>
 
@@ -113,10 +120,24 @@ const DigitalMarketing = () => {
               Content Marketing
             </h3>
             <p className="text-gray-600">
-              Create engaging blogs, videos, and content that builds trust and authority.
+              Create valuable and engaging content including blogs, videos, and graphics that build
+              trust, improve SEO rankings, and establish your brand authority in your industry.
             </p>
           </div>
 
+        </div>
+
+        {/* EXTRA SECTION */}
+        <div className="text-center mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+            Why Choose Our Digital Marketing?
+          </h2>
+
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            We combine creativity, strategy, and analytics to deliver marketing solutions that
+            drive real business growth. From startups to established brands, we help you reach
+            the right audience at the right time.
+          </p>
         </div>
 
         {/* CTA */}
@@ -128,8 +149,9 @@ const DigitalMarketing = () => {
             Boost Your Online Presence Today
           </h2>
 
-          <p className="mb-6">
-            Let’s grow your business with powerful digital marketing strategies.
+          <p className="mb-6 max-w-2xl mx-auto">
+            Start growing your business with our expert digital marketing strategies.
+            Increase traffic, generate leads, and maximize your revenue with us.
           </p>
 
           <Link
